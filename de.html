@@ -1,51 +1,29 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SimPosture — Sim Racing Seating Position, Measured</title>
-    <meta name="description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <title>SimPosture — Sim-Racing-Sitzposition messen</title>
+    <meta name="description" content="Miss und bewerte deine Sim-Racing-Sitzposition nach Fahrzeugklasse — GT3, Formel, Prototyp und mehr. Läuft auf deinem Gerät, privat, im Browser."/>
 
-    <link rel="canonical" href="https://simposture.com/"/>
+    <link rel="canonical" href="https://simposture.com/de.html"/>
     <link rel="alternate" hreflang="en" href="https://simposture.com/"/>
     <link rel="alternate" hreflang="de" href="https://simposture.com/de.html"/>
     <link rel="alternate" hreflang="x-default" href="https://simposture.com/"/>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta property="og:description" content="Measure and rate your sim racing seating position by vehicle class. Runs entirely on your device."/>
-    <meta property="og:url" content="https://simposture.com/"/>
+    <meta property="og:title" content="SimPosture — Sim-Racing-Sitzposition messen"/>
+    <meta property="og:description" content="Miss und bewerte deine Sim-Racing-Sitzposition nach Fahrzeugklasse. Läuft komplett auf deinem Gerät."/>
+    <meta property="og:url" content="https://simposture.com/de.html"/>
     <meta property="og:image" content="https://simposture.com/og-image.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta name="twitter:description" content="Measure and rate your sim racing seating position by vehicle class. Runs entirely on your device."/>
+    <meta name="twitter:title" content="SimPosture — Sim-Racing-Sitzposition messen"/>
+    <meta name="twitter:description" content="Miss und bewerte deine Sim-Racing-Sitzposition nach Fahrzeugklasse. Läuft komplett auf deinem Gerät."/>
     <meta name="twitter:image" content="https://simposture.com/og-image.png"/>
 
     <link rel="icon" type="image/png" sizes="32x32" href="app/favicon-32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="app/favicon-16.png"/>
     <meta name="theme-color" content="#0F1829"/>
-
-    <!-- Language routing like the app: English is the default; a German browser
-         locale is sent to the German page once. Both pages are full static
-         documents, so this only serves human visitors, never crawlers. Skipped
-         when the visitor arrived via the explicit English toggle (?lang=en) or
-         already chose English this session. -->
-    <script>
-        (function () {
-            try {
-                var params = new URLSearchParams(location.search);
-                if (params.get('lang') === 'en') {
-                    sessionStorage.setItem('sp-lang', 'en');
-                    return;
-                }
-                if (sessionStorage.getItem('sp-lang') === 'en') return;
-                var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-                if (lang.indexOf('de') === 0) {
-                    location.replace('de.html');
-                }
-            } catch (e) { /* no-op: static page still works without JS */ }
-        })();
-    </script>
 
     <style>
         :root {
@@ -131,69 +109,69 @@
 <div class="wrap">
     <header>
         <div class="brand">
-            <img src="logo.png" alt="SimPosture logo"/>
+            <img src="logo.png" alt="SimPosture Logo"/>
             <div>
                 <div class="name">SimPosture</div>
                 <div class="tagline">Engineering your perfect driving position</div>
             </div>
         </div>
 
-        <h1>The right seating position in your sim rig — measured, not guessed.</h1>
-        <p class="lead">SimPosture photographs you from the side in your seating position, analyses your posture and rates it for your vehicle class. You get a score per category and concrete tips — and get closer to the optimal position photo by photo.</p>
+        <h1>Die richtige Sitzposition im Sim-Rig — gemessen, nicht geschätzt.</h1>
+        <p class="lead">SimPosture fotografiert dich seitlich in deiner Sitzposition, analysiert deine Haltung und bewertet sie für deine Fahrzeugklasse. Du bekommst pro Kategorie eine Punktzahl und konkrete Tipps — und näherst dich Foto für Foto der optimalen Position.</p>
 
         <div class="hero-actions">
-            <a class="cta" href="app/">Open the app</a>
+            <a class="cta" href="app/">App öffnen</a>
             <div class="trust">
                 <svg class="shield" viewBox="0 0 24 24" aria-hidden="true">
                     <path class="shield-fill" d="M12 1L12 23c5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
                     <path class="shield-outline" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
                 </svg>
-                <span>Privacy 1st — runs entirely on your device.</span>
+                <span>Privacy 1st — läuft komplett auf deinem Gerät.</span>
             </div>
         </div>
     </header>
 
     <section>
-        <h2>What is SimPosture?</h2>
-        <p>An ergonomics tool for sim racers. The app detects your body posture in the image, measures the angles that matter — backrest, knees, arms, distance to the wheel — and compares them against what's ideal for your vehicle class. A GT3 seating position is a different thing from a formula car; SimPosture knows the difference.</p>
+        <h2>Was ist SimPosture?</h2>
+        <p>Ein Ergonomie-Werkzeug für Sim-Racer. Die App erkennt deine Körperhaltung im Bild, misst die entscheidenden Winkel — Rückenlehne, Knie, Arme, Lenkradabstand — und vergleicht sie mit dem, was für deine Fahrzeugklasse ideal ist. Eine GT3-Sitzposition ist eine andere als im Formelwagen; SimPosture kennt den Unterschied.</p>
     </section>
 
     <section>
-        <h2>Who is it for?</h2>
-        <p>For sim racers with their own rig and racing seat — from an entry-level build to a dedicated rig with a formula seating position. No ergonomics background needed; the app guides you.</p>
+        <h2>Für wen?</h2>
+        <p>Für Sim-Racer mit eigenem Rig und Rennsitz — vom Einsteiger-Aufbau bis zum dedizierten Rig mit Formel-Sitzposition. Ergonomie-Vorkenntnisse brauchst du keine, die App leitet dich an.</p>
     </section>
 
     <section>
-        <h2>How it works</h2>
+        <h2>So funktioniert's</h2>
         <ol class="steps">
-            <li><b>Capture</b> — camera to the side of your rig, one photo in your typical seating position.</li>
-            <li><b>Analyse</b> — the app detects your posture and measures the relevant angles automatically.</li>
-            <li><b>Improve</b> — you get a rating with concrete tips, adjust your position and shoot again.</li>
+            <li><b>Aufnehmen</b> — Kamera seitlich aufs Rig, ein Foto in deiner typischen Sitzposition.</li>
+            <li><b>Analysieren</b> — die App erkennt deine Haltung und misst die relevanten Winkel automatisch.</li>
+            <li><b>Verbessern</b> — du bekommst eine Bewertung mit konkreten Tipps, passt deine Position an und fotografierst erneut.</li>
         </ol>
     </section>
 
     <section>
-        <h2>For every vehicle class</h2>
-        <p>Road, GT3/GT, Prototype/LMP, Formula and Rally each have their own target values — from upright and close to the wheel to strongly reclined with raised legs. SimPosture rates against the class you actually drive.</p>
+        <h2>Für jede Fahrzeugklasse</h2>
+        <p>Straße, GT3/GT, Prototyp/LMP, Formel und Rallye haben jeweils eigene Zielwerte — von aufrecht und nah am Lenkrad bis stark liegend mit erhöhten Beinen. SimPosture bewertet gegen die Klasse, die du fährst.</p>
     </section>
 
     <section>
-        <h2>Your data stays with you</h2>
-        <p>Photo and analysis run entirely on your device. No upload, no servers, no sign-up, no tracking services — the app only needs the camera, and everything works offline after loading.</p>
+        <h2>Deine Daten bleiben bei dir</h2>
+        <p>Foto und Analyse laufen vollständig auf deinem Gerät. Kein Upload, keine Server, keine Registrierung, keine Tracking-Dienste — die App braucht nur die Kamera, und nach dem Laden funktioniert alles offline.</p>
     </section>
 
     <section>
-        <h2>On every device</h2>
-        <p>Available for iOS <em>(coming soon)</em> and Android <em>(coming soon)</em>, or right now directly in your browser at the rig PC — no install.</p>
+        <h2>Auf allen Geräten</h2>
+        <p>Als App für iOS <em>(coming soon)</em> und Android <em>(coming soon)</em> oder schon jetzt direkt im Browser am Rig-PC — ohne Installation.</p>
     </section>
 
     <div class="cta-repeat">
-        <a class="cta" href="app/">Open the app</a>
+        <a class="cta" href="app/">App öffnen</a>
     </div>
 
     <footer>
-        <!-- Privacy / Imprint links are wired here with F-053 (privacy.html, impressum.html). -->
-        <a href="de.html">Deutsch</a>
+        <!-- Datenschutz / Impressum werden hier mit F-053 verlinkt (privacy.html, impressum.html). -->
+        <a href="index.html?lang=en">English</a>
     </footer>
 </div>
 </body>
