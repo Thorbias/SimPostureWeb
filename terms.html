@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Usage Notes — SimPosture</title>
+    <meta name="description" content="Usage notes for the SimPosture apps and the website simposture.com."/>
+
+    <link rel="canonical" href="https://simposture.com/terms"/>
+    <link rel="alternate" hreflang="en" href="https://simposture.com/terms"/>
+    <link rel="alternate" hreflang="de" href="https://simposture.com/terms-de"/>
+    <!-- Mandatory page, no marketing content: deliberately left out of sitemap.xml
+         and not intended for search. -->
+    <meta name="robots" content="noindex, follow"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="app/favicon-32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="app/favicon-16.png"/>
+    <meta name="theme-color" content="#0F1829"/>
+
+    <!-- Standalone page without JavaScript or the Wasm bundle (F-058); CSS as in
+         privacy.html, see the reasoning there. -->
+    <style>
+        :root {
+            --bg: #0F1829;
+            --cyan: #22C7F2;
+            --text: #F8F9FA;
+            --body: #C7CDD3;
+            --muted: #8A93A0;
+            --outline: #2A3038;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--body);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--cyan); }
+
+        header { padding: 48px 0 24px; }
+        .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+        .brand img {
+            width: 48px; height: 48px; border-radius: 12px;
+            border: 1px solid var(--cyan); flex: 0 0 auto;
+        }
+        .brand .name { font-size: 22px; font-weight: 700; color: var(--text); }
+
+        h1 { font-size: 30px; line-height: 1.25; color: var(--text); margin: 0 0 8px; font-weight: 700; }
+        .updated { font-size: 14px; color: var(--muted); margin: 0; }
+
+        section { padding: 26px 0; border-top: 1px solid var(--outline); }
+        h2 { font-size: 20px; color: var(--text); margin: 0 0 12px; font-weight: 600; }
+        p { margin: 0 0 12px; }
+        ul { margin: 0 0 12px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+
+        footer {
+            padding: 28px 0 48px; border-top: 1px solid var(--outline);
+            font-size: 14px; color: var(--muted); text-align: center;
+        }
+        footer a { margin: 0 6px; }
+
+        @media (max-width: 520px) {
+            header { padding: 36px 0 20px; }
+            h1 { font-size: 25px; }
+        }
+    </style>
+</head>
+<body>
+<div class="wrap">
+    <header>
+        <div class="brand">
+            <a href="/"><img src="logo.png" alt="SimPosture logo"/></a>
+            <div class="name">SimPosture</div>
+        </div>
+
+        <h1>Usage Notes</h1>
+        <p class="updated">As of: 20 July 2026 · <a href="terms-de">Deutsch</a></p>
+    </header>
+
+    <section>
+        <h2>1. What SimPosture is</h2>
+        <p>From a side-on photo, SimPosture estimates body-posture angles and compares them against a stored target profile. On that basis, the app gives general guidance on seating and posture.</p>
+    </section>
+
+    <section>
+        <h2>2. Not medical advice</h2>
+        <p>The app does not make a diagnosis, does not carry out an examination and is not a substitute for advice from a doctor, physiotherapist or other health professional. Its assessments and recommendations are general ergonomics guidance, not a remedy and not a therapy.</p>
+    </section>
+
+    <section>
+        <h2>3. Use at your own risk</h2>
+        <p>You decide whether and how to act on the guidance. Only change your posture as far as feels comfortable to you, not against pain.</p>
+        <p>If you have or develop health problems — such as back, neck or joint pain — do not rely on the app; seek advice from a doctor or physiotherapist. This applies in particular if you have a pre-existing condition.</p>
+    </section>
+
+    <section>
+        <h2>4. Governing version</h2>
+        <p>These usage notes are available in German and English. The German version is legally binding; in case of doubt, the German version prevails.</p>
+    </section>
+
+    <section>
+        <h2>5. Changes</h2>
+        <p>We may adjust these notes when the app or the legal framework changes. The version published on this page at the time of use applies.</p>
+    </section>
+
+    <footer>
+        <a href="/">Home</a>
+        <a href="/copyright">Copyright</a>
+        <a href="/privacy">Privacy</a>
+        <a href="/impressum">Legal notice</a>
+    </footer>
+</div>
+</body>
+</html>
