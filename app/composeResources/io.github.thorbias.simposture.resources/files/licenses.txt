@@ -17,6 +17,10 @@ Pose Landmarker model (BlazePose GHUM 3D)
 Inter (font)
   (c) 2020 The Inter Project Authors — SIL Open Font License 1.1 (full text below)
 
+Material Design Icons (icon artwork)
+  (c) Google LLC — Apache License 2.0 (full text below)
+  https://github.com/google/material-design-icons
+
 @js-joda/core 3.2.0
   (c) 2016 Philipp Thürwächter & Pattrick Hüper
   (c) 2007-present Stephen Colebourne & Michael Nascimento Santos
@@ -1948,4 +1952,4 @@ License: The Apache License, Version 2.0 - http://www.apache.org/licenses/LICENS
 --------------------------------------------------------------------------------
 
 
-This report was generated at Sun Jul 26 09:56:20 UTC 2026.
+This report was generated at Mon Jul 27 14:52:56 UTC 2026.
