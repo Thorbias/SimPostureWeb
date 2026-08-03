@@ -1,25 +1,26 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="en">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Datenschutzerklärung — SimPosture</title>
-    <meta name="description" content="Datenschutzerklärung für die Website simposture.com und die SimPosture-Apps."/>
+    <title>Privacy Policy — SimPosture</title>
+    <meta name="description" content="Privacy policy for the website simposture.com and the SimPosture apps."/>
 
     <link rel="canonical" href="https://simposture.com/privacy"/>
-    <!-- Pflichtseite, kein Marketing-Inhalt: bewusst nicht in der sitemap.xml und
-         nicht für die Suche vorgesehen. -->
+    <link rel="alternate" hreflang="de" href="https://simposture.com/privacy-de"/>
+    <link rel="alternate" hreflang="en" href="https://simposture.com/privacy"/>
+    <!-- Mandatory page, no marketing content: deliberately left out of sitemap.xml
+         and not intended for search. -->
     <meta name="robots" content="noindex, follow"/>
 
     <link rel="icon" type="image/png" sizes="32x32" href="app/favicon-32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="app/favicon-16.png"/>
     <meta name="theme-color" content="#0F1829"/>
 
-    <!-- Eigenständige Seite ohne JavaScript und ohne Wasm-Bundle: Store-Prüfer
-         rufen diese URL direkt auf, sie muss ohne geladene App funktionieren
-         (F-053). Das CSS ist eine reduzierte Fassung der Landing Page; die
-         statischen Seiten teilen bewusst kein Stylesheet, da es keinen
-         Build-Schritt für web/static/ gibt. -->
+    <!-- Standalone page without JavaScript or the Wasm bundle: store reviewers open
+         this URL directly and it has to work without the app loaded (F-053).
+         Translation of the German original at /privacy-de, which is the binding
+         version; the CSS is shared with it verbatim so the two cannot drift. -->
     <style>
         :root {
             --bg: #0F1829;
@@ -76,115 +77,123 @@
 <div class="wrap">
     <header>
         <div class="brand">
-            <a href="/"><img src="logo.png" alt="SimPosture Logo"/></a>
+            <a href="/"><img src="logo.png" alt="SimPosture logo"/></a>
             <div class="name">SimPosture</div>
         </div>
 
-        <h1>Datenschutzerklärung</h1>
-        <p class="updated">Stand: 1. August 2026</p>
+        <h1>Privacy Policy</h1>
+        <p class="updated">As of: 3 August 2026</p>
     </header>
 
     <section>
-        <h2>1. Verantwortlicher</h2>
-        <p>Verantwortlicher im Sinne der Datenschutz-Grundverordnung (DSGVO) für diese Website und die SimPosture-Apps ist:</p>
+        <h2>1. Controller</h2>
+        <p>The controller within the meaning of the General Data Protection Regulation (GDPR) for this website and the SimPosture apps is:</p>
         <address>
-            Tobias Käfer<br/>
+            Tobias K&auml;fer<br/>
             c/o Block Services<br/>
-            Stuttgarter Straße 106<br/>
+            Stuttgarter Stra&szlig;e 106<br/>
             70736 Fellbach<br/>
-            Deutschland<br/>
-            E-Mail: <a href="mailto:webmaster@simposture.com">webmaster@simposture.com</a>
+            Germany<br/>
+            E-mail: <a href="mailto:webmaster@simposture.com">webmaster@simposture.com</a>
         </address>
-        <p>Ein Datenschutzbeauftragter ist gesetzlich nicht bestellt.</p>
+        <p>No data protection officer is appointed, none being required by law.</p>
     </section>
 
     <section>
-        <h2>2. Grundsatz: Verarbeitung auf deinem Gerät</h2>
-        <p>SimPosture ist so gebaut, dass deine Inhalte dein Gerät nicht verlassen. Fotos, die du aufnimmst oder auswählst, sowie die daraus berechnete Haltungsanalyse werden ausschließlich lokal verarbeitet. Es gibt kein Nutzerkonto, keine Registrierung und keinen Server, an den Bilder oder Messergebnisse übertragen würden.</p>
-        <p>Personenbezogene Daten fallen dennoch an, wenn du diese Website aufrufst — das ist technisch unvermeidbar und im Folgenden beschrieben.</p>
+        <h2>2. Principle: processing on your device</h2>
+        <p>SimPosture is built so that your content never leaves your device. Photos you take or select, and the posture analysis computed from them, are processed locally and nowhere else. There is no user account, no sign-up and no server that images or measurements would be transmitted to.</p>
+        <p>Personal data does arise when you visit this website — that is technically unavoidable and described below.</p>
     </section>
 
     <section>
-        <h2>3. Aufruf der Website (Server-Logfiles)</h2>
-        <p>Diese Website wird von GitHub Pages gehostet. Beim Aufruf überträgt dein Browser technisch notwendige Daten an die Server des Hosters, die dort in Logfiles gespeichert werden:</p>
+        <h2>3. Visiting the website (server log files)</h2>
+        <p>This website is hosted on GitHub Pages. When you open it, your browser transmits technically necessary data to the host's servers, where it is stored in log files:</p>
         <ul>
-            <li>IP-Adresse des anfragenden Geräts</li>
-            <li>Datum und Uhrzeit des Zugriffs</li>
-            <li>aufgerufene Seite bzw. Datei</li>
-            <li>übertragene Datenmenge und Meldung über den Abrufstatus</li>
-            <li>Browsertyp, Browserversion und Betriebssystem</li>
-            <li>gegebenenfalls die zuvor besuchte Seite (Referrer)</li>
+            <li>IP address of the requesting device</li>
+            <li>date and time of access</li>
+            <li>page or file requested</li>
+            <li>volume of data transferred and the status of the request</li>
+            <li>browser type, browser version and operating system</li>
+            <li>the previously visited page, where applicable (referrer)</li>
         </ul>
-        <p><b>Zweck:</b> Auslieferung der Website, Gewährleistung von Stabilität und Sicherheit des Betriebs.</p>
-        <p><b>Rechtsgrundlage:</b> Art. 6 Abs. 1 lit. f DSGVO. Das berechtigte Interesse liegt in der technisch fehlerfreien und sicheren Bereitstellung des Angebots.</p>
-        <p><b>Empfänger und Drittlandübermittlung:</b> Hoster ist die GitHub, Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA, ein Unternehmen mit Sitz in den Vereinigten Staaten. Damit werden die genannten Daten in ein Drittland übermittelt. GitHub ist unter dem EU-US Data Privacy Framework zertifiziert; die Übermittlung stützt sich auf den Angemessenheitsbeschluss der Europäischen Kommission vom 10. Juli 2023 sowie ergänzend auf Standardvertragsklauseln. Einzelheiten zur Datenverarbeitung durch GitHub: <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
-        <p><b>Speicherdauer:</b> Über die Dauer der Speicherung entscheidet allein der Hoster. Diese Website wird als rein statisches Angebot ohne eigenen Server betrieben; der Verantwortliche hat auf die Logfiles weder Zugriff noch die Möglichkeit, ihre Aufbewahrung zu konfigurieren, und wertet sie nicht aus. Maßgeblich sind daher die Angaben im oben verlinkten GitHub Privacy Statement.</p>
+        <p><b>Purpose:</b> delivering the website and keeping its operation stable and secure.</p>
+        <p><b>Legal basis:</b> Art. 6(1)(f) GDPR. The legitimate interest lies in providing the service securely and free of technical faults.</p>
+        <p><b>Recipients and transfer to a third country:</b> the host is GitHub, Inc., 88 Colin P Kelly Jr Street, San Francisco, CA 94107, USA, a company based in the United States. The data named above is therefore transferred to a third country. GitHub is certified under the EU-US Data Privacy Framework; the transfer relies on the European Commission's adequacy decision of 10 July 2023 and, in addition, on standard contractual clauses. For details of GitHub's processing see the <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement" rel="noopener noreferrer">GitHub Privacy Statement</a>.</p>
+        <p><b>Retention:</b> the host alone decides how long the data is stored. This website is operated as a purely static offering without a server of our own; the controller can neither access the log files nor configure their retention, and does not evaluate them. The GitHub Privacy Statement linked above therefore governs.</p>
     </section>
 
     <section>
-        <h2>4. Nutzung der Web-App</h2>
-        <p>Die unter <a href="/app/">simposture.com/app</a> erreichbare Anwendung läuft vollständig im Browser deines Geräts.</p>
+        <h2>4. Using the web app</h2>
+        <p>The application available at <a href="/app/">simposture.com/app</a> runs entirely in your device's browser.</p>
         <ul>
-            <li>Beim ersten Aufruf werden die Programmdateien vom Hoster geladen (siehe Abschnitt 3). Danach ist keine Verbindung mehr erforderlich; die App funktioniert offline.</li>
-            <li>Fotos werden im Browser verarbeitet und <b>nicht</b> hochgeladen.</li>
-            <li>Ein Service Worker speichert die Programmdateien im Cache deines Browsers, damit die App offline verfügbar ist. Dabei werden keine personenbezogenen Daten gespeichert.</li>
-            <li>Im lokalen Speicher deines Browsers (<i>localStorage</i>) werden ausschließlich technische Einstellungen abgelegt, etwa deine Sprach- und Designwahl. Diese Angaben verbleiben auf deinem Gerät und werden nicht übermittelt.</li>
-            <li><b>Speicherdauer:</b> Cache und Einstellungen bleiben so lange auf deinem Gerät, bis du die Websitedaten in deinem Browser löschst. Da beides dein Gerät nie verlässt, kann und muss der Verantwortliche hier nichts löschen.</li>
-            <li>Cookies zu Analyse- oder Werbezwecken werden nicht gesetzt.</li>
+            <li>On the first visit the program files are loaded from the host (see section 3). After that no connection is required; the app works offline.</li>
+            <li>Photos are processed in the browser and are <b>not</b> uploaded.</li>
+            <li>A service worker stores the program files in your browser's cache so the app is available offline. No personal data is stored in the process.</li>
+            <li>Your browser's local storage (<i>localStorage</i>) holds technical settings only, such as your choice of language and theme. This information stays on your device and is not transmitted.</li>
+            <li><b>Retention:</b> cache and settings remain on your device until you clear the site data in your browser. Since neither ever leaves your device, there is nothing for the controller to delete.</li>
+            <li>No cookies are set for analytics or advertising.</li>
         </ul>
     </section>
 
     <section>
-        <h2>5. Nutzung der Apps für Android und iOS</h2>
-        <p>Die mobilen Apps verarbeiten Fotos und Analyseergebnisse ausschließlich auf deinem Gerät. Eine Übertragung an den Verantwortlichen oder an Dritte findet nicht statt.</p>
+        <h2>5. Using the Android and iOS apps</h2>
+        <p>The mobile apps process photos and analysis results exclusively on your device. Nothing is transmitted to the controller or to third parties.</p>
         <ul>
-            <li><b>Kamerazugriff:</b> Die App fragt die Kameraberechtigung ab, um eine Aufnahme deiner Sitzposition zu ermöglichen. Die Aufnahme wird lokal ausgewertet. Du kannst die Berechtigung jederzeit in den Systemeinstellungen deines Geräts widerrufen.</li>
-            <li><b>Zugriff auf die Fotomediathek:</b> Nur auf deinen Anstoß, und in beiden Richtungen getrennt. Wählst du ein vorhandenes Bild aus, übernimmt die Auswahl das System und die App erhält ausschließlich das ausgewählte Bild — auf die übrige Fotomediathek hat sie keinen Zugriff. Sicherst du eine Bewertung, legt die App das erzeugte Bild dort ab; unter iOS fragt sie dafür eine Berechtigung ab, die ausschließlich das Hinzufügen erlaubt und kein Lesen. Du kannst sie jederzeit in den Systemeinstellungen deines Geräts widerrufen.</li>
-            <li><b>Lokale Speicherung:</b> Einstellungen und — sofern von dir angelegt — eigene Profile werden lokal auf dem Gerät gespeichert und mit der Deinstallation der App entfernt.</li>
+            <li><b>Camera access:</b> the app asks for the camera permission in order to take a picture of your seating position. The picture is evaluated locally. You can revoke the permission at any time in your device's system settings.</li>
+            <li><b>Photo library access:</b> only when you start it, and separately in each direction. If you pick an existing image, the system handles the selection and the app receives only the image you picked — it has no access to the rest of your library. If you save a rating, the app puts the generated image there; on iOS it asks for a permission that allows adding only, never reading. You can revoke it at any time in your device's system settings.</li>
+            <li><b>Local storage:</b> settings and — where you create them — your own profiles are stored locally on the device and are removed when you uninstall the app.</li>
         </ul>
-        <p><b>Bezug über die Stores:</b> Lädst du die App aus dem Google Play Store oder dem Apple App Store, verarbeiten die jeweiligen Betreiber (Google Ireland Limited bzw. Apple Distribution International Ltd.) im Rahmen des Downloads eigenverantwortlich Daten. Auf diese Verarbeitung hat der Verantwortliche keinen Einfluss; es gelten die Datenschutzhinweise der Store-Betreiber.</p>
+        <p><b>Obtaining the app from the stores:</b> if you download the app from the Google Play Store or the Apple App Store, the respective operators (Google Ireland Limited and Apple Distribution International Ltd.) process data on their own responsibility as part of the download. The controller has no influence on that processing; the store operators' privacy notices apply.</p>
     </section>
 
     <section>
-        <h2>6. Kein Tracking, keine Analyse-Dienste</h2>
-        <p>SimPosture setzt weder auf der Website noch in den Apps Analyse-, Tracking-, Werbe- oder Crash-Reporting-Dienste ein. Es werden keine Nutzungsprofile erstellt und keine Daten an Dritte weitergegeben. Externe Schriftarten oder andere Inhalte von Drittanbietern werden nicht nachgeladen.</p>
+        <h2>6. No tracking, no analytics services</h2>
+        <p>SimPosture uses no analytics, tracking, advertising or crash-reporting services, neither on the website nor in the apps. No usage profiles are created and no data is passed to third parties. No external fonts or other third-party content are loaded.</p>
     </section>
 
     <section>
-        <h2>7. Kontaktaufnahme</h2>
-        <p>Nimmst du per E-Mail Kontakt auf, werden deine Angaben zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage ist Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an der Beantwortung) bzw. Art. 6 Abs. 1 lit. b DSGVO, sofern die Anfrage auf einen Vertrag gerichtet ist. Die Daten werden gelöscht, sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungsfristen entgegenstehen.</p>
+        <h2>7. Contacting us</h2>
+        <p>If you contact us by e-mail, your details are processed in order to handle your enquiry. The legal basis is Art. 6(1)(f) GDPR (legitimate interest in answering) or Art. 6(1)(b) GDPR where the enquiry is directed at a contract. The data is deleted once the enquiry has been dealt with conclusively and no statutory retention periods apply.</p>
     </section>
 
     <section>
-        <h2>8. Deine Rechte</h2>
-        <p>Dir stehen gegenüber dem Verantwortlichen die folgenden Rechte zu:</p>
+        <h2>8. Your rights</h2>
+        <p>You have the following rights vis-&agrave;-vis the controller:</p>
         <ul>
-            <li><b>Auskunft</b> über die zu deiner Person verarbeiteten Daten (Art. 15 DSGVO)</li>
-            <li><b>Berichtigung</b> unrichtiger Daten (Art. 16 DSGVO)</li>
-            <li><b>Löschung</b> (Art. 17 DSGVO)</li>
-            <li><b>Einschränkung der Verarbeitung</b> (Art. 18 DSGVO)</li>
-            <li><b>Datenübertragbarkeit</b> (Art. 20 DSGVO)</li>
-            <li><b>Widerspruch</b> gegen Verarbeitungen, die auf Art. 6 Abs. 1 lit. f DSGVO beruhen (Art. 21 DSGVO)</li>
-            <li><b>Widerruf einer erteilten Einwilligung</b> mit Wirkung für die Zukunft (Art. 7 Abs. 3 DSGVO)</li>
+            <li><b>Access</b> to the data processed about you (Art. 15 GDPR)</li>
+            <li><b>Rectification</b> of inaccurate data (Art. 16 GDPR)</li>
+            <li><b>Erasure</b> (Art. 17 GDPR)</li>
+            <li><b>Restriction of processing</b> (Art. 18 GDPR)</li>
+            <li><b>Data portability</b> (Art. 20 GDPR)</li>
+            <li><b>Objection</b> to processing based on Art. 6(1)(f) GDPR (Art. 21 GDPR)</li>
+            <li><b>Withdrawal of consent</b> with effect for the future (Art. 7(3) GDPR)</li>
         </ul>
-        <p>Zur Ausübung genügt eine formlose Nachricht an die in Abschnitt 1 genannte Adresse.</p>
+        <p>An informal message to the address given in section 1 is enough to exercise them.</p>
     </section>
 
     <section>
-        <h2>9. Beschwerderecht bei der Aufsichtsbehörde</h2>
-        <p>Unbeschadet anderer Rechtsbehelfe steht dir ein Beschwerderecht bei einer Datenschutz-Aufsichtsbehörde zu, insbesondere in dem Mitgliedstaat deines Aufenthaltsorts, deines Arbeitsplatzes oder des Orts des mutmaßlichen Verstoßes (Art. 77 DSGVO). Zuständige Behörde für den Verantwortlichen ist der Landesbeauftragte für den Datenschutz und die Informationsfreiheit Baden-Württemberg, Lautenschlagerstraße 20, 70173 Stuttgart (<a href="https://www.baden-wuerttemberg.datenschutz.de/" rel="noopener noreferrer">baden-wuerttemberg.datenschutz.de</a>).</p>
+        <h2>9. Right to lodge a complaint with a supervisory authority</h2>
+        <p>Without prejudice to any other remedy, you have the right to lodge a complaint with a data protection supervisory authority, in particular in the Member State of your residence, your place of work or the place of the alleged infringement (Art. 77 GDPR). The authority responsible for the controller is the Landesbeauftragter f&uuml;r den Datenschutz und die Informationsfreiheit Baden-W&uuml;rttemberg, Lautenschlagerstra&szlig;e 20, 70173 Stuttgart (<a href="https://www.baden-wuerttemberg.datenschutz.de/" rel="noopener noreferrer">baden-wuerttemberg.datenschutz.de</a>).</p>
     </section>
 
     <section>
-        <h2>10. Änderungen dieser Erklärung</h2>
-        <p>Diese Datenschutzerklärung wird angepasst, wenn Änderungen an SimPosture oder an der Rechtslage dies erfordern. Es gilt jeweils die auf dieser Seite abrufbare Fassung.</p>
+        <h2>10. Changes to this policy</h2>
+        <p>This privacy policy will be adjusted when changes to SimPosture or to the legal framework make it necessary. The version available on this page at the time applies.</p>
+    </section>
+
+    <section>
+        <h2>11. Governing version</h2>
+        <p>This privacy policy is available in German and English — use the language switch at the foot of the page. The German version is legally binding; in case of divergence, it prevails.</p>
     </section>
 
     <footer>
-        <a href="/">Startseite</a>
-        <a href="/terms-de">Nutzungshinweise</a>
-        <a href="/copyright-de">Urheberrecht</a>
-        <a href="/impressum">Impressum</a>
+        <!-- The language switch lives here on every page of the site, so it
+             sits in the same place whichever page the reader is on. -->
+        <a href="/?lang=en">Home</a>
+        <a href="/terms">Usage notes</a>
+        <a href="/copyright">Copyright</a>
+        <a href="/impressum">Imprint</a>
+        <a href="/privacy-de">Deutsch</a>
     </footer>
 </div>
 </body>
