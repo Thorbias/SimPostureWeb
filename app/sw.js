@@ -13,19 +13,20 @@ var VERSION = new URL(self.location.href).searchParams.get('v') || 'dev';
 // very cache it is stuck on and `activate` would spare it. Folding a revision
 // of this file into the name guarantees a fresh cache on every service-worker
 // change, which is what releases such a client (B-009).
-var SW_REVISION = '2';
+var SW_REVISION = '3';
 var SHELL_CACHE = 'simposture-shell-' + VERSION + '-' + SW_REVISION;
 
 // Bump only when the files in IMMUTABLE below actually change — a model swap or
-// a MediaPipe upgrade. They are ~9 MB together and identical across app
+// a MediaPipe upgrade. They are ~17 MB together and identical across app
 // releases, so they sit outside the version-scoped shell cache instead of being
 // re-downloaded with every deploy. The flip side is that they are invisible to
 // a release: forgetting this bump pins users to the old model indefinitely.
 var ASSET_REVISION = '1';
 var ASSET_CACHE = 'simposture-assets-' + ASSET_REVISION;
 
-// Pose estimation runs fully on-device; precache the runtime and the model so
-// the analysis also works offline even if it was never run while online.
+// Pose estimation runs fully on-device; warm the runtime and the model into the
+// cache so the analysis also works offline even if it was never run while
+// online. Fetched best-effort rather than as a precondition — see warmImmutable.
 var IMMUTABLE = [
     'mediapipe/vision_bundle.mjs',
     'mediapipe/wasm/vision_wasm_internal.js',
@@ -47,14 +48,40 @@ var SHELL = [
     'apple-touch-icon.png'
 ];
 
+// Only the shell is a precondition for installing. A slow install costs nothing
+// — the previous worker keeps serving pages until this one activates — but a
+// *failed* one is silently fatal: the browser discards the new worker and the
+// user stays on the old build with nothing to show for it (B-010).
 self.addEventListener('install', function (event) {
     event.waitUntil(
-        Promise.all([
-            caches.open(SHELL_CACHE).then(function (cache) { return cache.addAll(SHELL); }),
-            caches.open(ASSET_CACHE).then(function (cache) { return cache.addAll(IMMUTABLE); })
-        ]).then(function () { return self.skipWaiting(); })
+        caches.open(SHELL_CACHE)
+            .then(function (cache) { return cache.addAll(SHELL); })
+            .then(warmImmutable)
+            .then(function () { return self.skipWaiting(); })
     );
 });
+
+/**
+ * Warms IMMUTABLE into the asset cache, one file at a time and tolerating every
+ * failure. `cache.addAll` would be atomic across ~17 MB, so a single flaky
+ * mobile request — or a per-origin quota squeeze while the outgoing cache is
+ * still occupying its own ~31 MB, which activate only frees later — would take
+ * the whole install down with it (B-010). Anything missed here is picked up by
+ * the cache-first handler on first use, and entries already present from an
+ * earlier release are skipped so a deploy costs no re-download.
+ */
+function warmImmutable() {
+    return caches.open(ASSET_CACHE).then(function (cache) {
+        return IMMUTABLE.reduce(function (chain, url) {
+            return chain.then(function () {
+                return cache.match(url).then(function (hit) {
+                    if (hit) { return undefined; }
+                    return cache.add(url).catch(function () { return undefined; });
+                });
+            });
+        }, Promise.resolve());
+    });
+}
 
 self.addEventListener('activate', function (event) {
     event.waitUntil(
