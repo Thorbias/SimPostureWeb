@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SimPosture — Sim Racing Seating Position, Measured</title>
-    <meta name="description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <title>Sim Rig Setup: Seat Type and Mounting Explained | SimPosture</title>
+    <meta name="description" content="How your sim racing seat type and mounting decide which posture angles you can adjust — recliner vs bucket, angle-adjustable vs fixed — and how to photograph your rig."/>
 
-    <link rel="canonical" href="https://simposture.com/"/>
-    <link rel="alternate" hreflang="en" href="https://simposture.com/"/>
-    <link rel="alternate" hreflang="de" href="https://simposture.com/de/"/>
-    <link rel="alternate" hreflang="x-default" href="https://simposture.com/"/>
+    <link rel="canonical" href="https://simposture.com/guides/sim-rig-setup"/>
+    <link rel="alternate" hreflang="en" href="https://simposture.com/guides/sim-rig-setup"/>
+    <link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/sim-rig-aufbau"/>
+    <link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/sim-rig-setup"/>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta property="og:description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
-    <meta property="og:url" content="https://simposture.com/"/>
+    <meta property="og:title" content="Sim Rig Setup: Seat Type and Mounting Explained | SimPosture"/>
+    <meta property="og:description" content="How your sim racing seat type and mounting decide which posture angles you can adjust — recliner vs bucket, angle-adjustable vs fixed — and how to photograph your rig."/>
+    <meta property="og:url" content="https://simposture.com/guides/sim-rig-setup"/>
     <meta property="og:image" content="https://simposture.com/og-image.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta name="twitter:description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <meta name="twitter:title" content="Sim Rig Setup: Seat Type and Mounting Explained | SimPosture"/>
+    <meta name="twitter:description" content="How your sim racing seat type and mounting decide which posture angles you can adjust — recliner vs bucket, angle-adjustable vs fixed — and how to photograph your rig."/>
     <meta name="twitter:image" content="https://simposture.com/og-image.png"/>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/app/favicon-32.png"/>
@@ -27,29 +27,15 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "SimPosture",
-        "description": "Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser.",
-        "operatingSystem": "Web browser",
-        "applicationCategory": "SportsApplication",
+        "@type": "TechArticle",
+        "headline": "Sim Rig Setup: Seat Type and Mounting Explained | SimPosture",
+        "description": "How your sim racing seat type and mounting decide which posture angles you can adjust — recliner vs bucket, angle-adjustable vs fixed — and how to photograph your rig.",
         "inLanguage": "en",
-        "url": "https://simposture.com/",
-        "isAccessibleForFree": true,
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+        "url": "https://simposture.com/guides/sim-rig-setup",
+        "isPartOf": { "@type": "WebSite", "name": "SimPosture", "url": "https://simposture.com/" }
     }
     </script>
 
-    <script>
-        (function () {
-            try {
-                var params = new URLSearchParams(location.search);
-                if (params.get('lang') === 'en') { sessionStorage.setItem('sp-lang', 'en'); return; }
-                if (sessionStorage.getItem('sp-lang') === 'en') return;
-                var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-                if (lang.indexOf('de') === 0) { location.replace('/de/'); }
-            } catch (e) { /* no-op */ }
-        })();
-    </script>
     <style>
         :root {
             --bg: #0F1829; --surface: #16223A; --cyan: #22C7F2; --on-cyan: #0C1013;
@@ -233,75 +219,77 @@
                 <a href="/copyright"><span class="mi-spacer"></span><span>Copyright</span></a>
                 <a href="/privacy"><span class="mi-spacer"></span><span>Privacy</span></a>
                 <a href="/impressum"><span class="mi-spacer"></span><span>Imprint</span></a>
-                <a href="/de/"><span class="mi-spacer"></span><span>Deutsch</span></a>
+                <a href="/de/guides/sim-rig-aufbau"><span class="mi-spacer"></span><span>Deutsch</span></a>
             </nav>
         </details>
     </header>
 <div class="wrap">
-    <header class="hero">
-        <img class="hero-shot" src="/rating-screenshot.jpg" alt="SimPosture rating of a GT3 seating position with angle markers and score"/>
-        <h1>The right seating position in your sim rig — measured, not guessed.</h1>
-        <p class="lead">SimPosture photographs you from the side in your seating position, analyses your posture and rates it for your vehicle class. You get a score per category and concrete tips — and get closer to the optimal position photo by photo.</p>
-        <div class="hero-actions">
-            <a class="cta" href="/app/">Start Webapp</a>
-            <div class="trust">
-                <svg class="shield" viewBox="0 0 24 24" aria-hidden="true">
-                    <path class="shield-fill" d="M12 1L12 23c5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
-                    <path class="shield-outline" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
-                </svg>
-                <span>Privacy 1st — runs entirely on your device.</span>
+    <main>
+        <h1>Sim rig setup: seat type &amp; mounting</h1>
+        <p class="lead">Before the exact angles for your class matter, two things about your seat decide which of them you can even adjust: what kind of seat it is, and how it is mounted. This page explains both — and how to photograph your rig so the measurement is accurate.</p>
+        <section>
+            <h2>Seat type: recliner or bucket</h2>
+            <div class="seatrow">
+                <figure><img src="/assets/seat_recliner.png" alt="Recliner seat"/><figcaption>Recliner — adjustable backrest</figcaption></figure>
+                <figure><img src="/assets/seat_bucket.png" alt="Bucket seat"/><figcaption>Bucket — rigid shell</figcaption></figure>
             </div>
-        </div>
-    </header>
-    <section id="what">
-        <h2>What is SimPosture?</h2>
-        <p>An ergonomics tool for sim racers. The app detects your body posture in the image, measures the angles that matter — backrest, knees, arms, distance to the wheel — and compares them against what's ideal for your vehicle class. A GT3 seating position is a different thing from a formula car; SimPosture knows the difference.</p>
-    </section>
-    <section id="who">
-        <h2>Who is it for?</h2>
-        <p>For sim racers with their own rig and racing seat — from an entry-level build to a dedicated rig with a formula seating position. No ergonomics background needed; the app guides you.</p>
-    </section>
-    <section id="how">
-        <h2>How it works</h2>
-        <ol class="steps">
-            <li><b>Capture</b> — camera to the side of your rig, one photo in your typical seating position.</li>
-            <li><b>Analyse</b> — the app detects your posture and measures the relevant angles automatically.</li>
-            <li><b>Improve</b> — you get a rating with concrete tips, adjust your position and shoot again.</li>
-        </ol>
-    </section>
-    <section id="basics">
-        <h2>The basics: sim rig setup</h2>
-        <p>Which angles you can even adjust depends on your seat and how it is mounted — recliner or bucket, angle-adjustable or fixed. Start here: <a href="/guides/sim-rig-setup">Sim rig setup: seat type and mounting</a>.</p>
-    </section>
-    <section id="classes">
-        <h2>For every vehicle class</h2>
-        <p>Road, GT3, Prototype/LMP, Formula and Rally each have their own target values for the seating position — from upright and close to the wheel to strongly reclined with raised legs. SimPosture rates against the class you actually drive. The target angles per class are explained in our guides:</p>
-        <ul class="guide-links">
-            <li><a href="/guides/road-seating-position">Road</a></li>
-            <li><a href="/guides/gt3-seating-position">GT3</a></li>
-            <li><a href="/guides/prototype-seating-position">Prototype/LMP</a></li>
-            <li><a href="/guides/formula-seating-position">Formula</a></li>
-            <li><a href="/guides/rally-seating-position">Rally</a></li>
-        </ul>
-    </section>
-    <section id="privacy">
-        <h2>Your data stays with you</h2>
-        <p>Photo and analysis run entirely on your device. No upload, no servers, no sign-up, no tracking services — the app only needs the camera, plus your photo library when you pick an image there or save a rating, and everything works offline after loading.</p>
-    </section>
-    <section id="devices">
-        <h2>On every device</h2>
-        <p>Available for iOS <em>(coming soon)</em> and Android <em>(coming soon)</em>, or right now directly in your browser at the rig PC — no install.</p>
-        <p>We're currently looking for Android beta testers — <a href="https://groups.google.com/g/simposture-beta-test-open" target="_blank" rel="noopener">sign up in the Google Group</a>.</p>
-    </section>
-    <div class="cta-repeat">
-        <a class="cta" href="/app/">Start Webapp</a>
-    </div>
+            <p>A <b>recliner</b> has an adjustable backrest — you can change your torso lean directly. A <b>bucket</b> is a rigid shell with a fixed backrest angle; on a bucket, torso lean can only be changed by tilting the whole seat.</p>
+        </section>
+        <section>
+            <h2>Seat mounting: angle-adjustable or fixed</h2>
+            <div class="seatrow">
+                <figure><img src="/assets/seat_bucket_fixed.png" alt="Seat on a fixed, horizontal mount"/><figcaption>Fixed, horizontal</figcaption></figure>
+                <figure><img src="/assets/seat_bucket_adjustable.png" alt="Seat on an angle-adjustable mount"/><figcaption>Angle-adjustable</figcaption></figure>
+            </div>
+            <p>An <b>angle-adjustable mount</b> lets you tilt the whole seat, which changes torso lean and knee height together. A seat <b>fixed horizontally</b> has neither adjustment — on a fixed bucket, torso lean cannot be set at all, and the only fix for a reclined class is to upgrade to an angle-adjustable mount.</p>
+        </section>
+        <section>
+            <h2>Which adjustment changes which angle</h2>
+        <table>
+            <thead><tr><th>Adjustment</th><th>Affects</th><th>Present with</th></tr></thead>
+            <tbody>
+                <tr><td>Backrest</td><td>Torso lean</td><td>Recliner seat</td></tr>
+                <tr><td>Mounting angle</td><td>Torso lean <b>and</b> knee height at once</td><td>Angle-adjustable mount</td></tr>
+                <tr><td>Seat distance</td><td>Reach to pedals and wheel (knee &amp; elbow)</td><td>Rig-dependent</td></tr>
+                <tr><td>Pedal height</td><td>Hip angle (via knee height)</td><td>Rig-dependent</td></tr>
+                <tr><td>Pedal distance</td><td>Knee angle</td><td>Rig-dependent</td></tr>
+                <tr><td>Wheel height</td><td>Wheel height / shoulder angle</td><td>Rig-dependent</td></tr>
+                <tr><td>Wheel angle</td><td>Elbow angle and hand posture</td><td>Rig-dependent</td></tr>
+            </tbody>
+        </table>
+            <p>Set them in this order: first the <b>seat</b> (mounting angle, backrest, seat distance), then the <b>pedals</b> (height and distance), then the <b>wheel</b> (height and angle) — otherwise you adjust the same angle twice. On most rigs the hip angle is reached through the pedal height, so it stays adjustable in any combination.</p>
+        </section>
+        <section>
+            <h2>General tips</h2>
+            <p>First and foremost it has to feel <b>comfortable</b> — comfortable enough to drive long stints without pain. The tips and target values here aren't an end in themselves; they give you a good orientation and a head start.</p>
+            <ul class="tips">
+                <li><b>Wrist test (reach)</b> — back against the seat, stretch your arm straight ahead: your wrist should rest on top of the wheel rim. Gripping at 9 and 3 then gives you the slightly bent elbow by itself.</li>
+                <li><b>Shoulders on the seat</b> — your shoulders stay against the backrest when you grip the wheel. If you have to pull them forward, you are sitting too far away.</li>
+                <li><b>A little bend in the knee</b> — with the brake fully pressed the knee stays slightly bent; a fully straight leg costs force and feel at the pedal.</li>
+                <li><b>Wheel height</b> — the top of the wheel sits roughly at shoulder height (Road, GT, Rally) or toward eye level (Formula, Prototype).</li>
+                <li><b>Head balanced</b> — your head rests relaxed over your shoulders and your eyes look straight ahead; not tilted back, not pushed forward.</li>
+            </ul>
+        </section>
+        <section>
+            <h2>How to photograph your rig</h2>
+            <p>SimPosture measures your angles from one side-on photo. Place the camera to the side of your rig, capture your whole body from head to foot, keep the camera level rather than tilted, and take the shot in your normal seating position with your hands at 9 and 3 and one pedal fully pressed. That is all it needs to rate your position and tell you what to change.</p>
+        </section>
+    </main>
+    <nav class="compare">
+        <h2>Seating position by class</h2>
+        <a href="/guides/road-seating-position">Road</a>
+        <a href="/guides/gt3-seating-position">GT3</a>
+        <a href="/guides/prototype-seating-position">Prototype/LMP</a>
+        <a href="/guides/formula-seating-position">Formula</a>
+        <a href="/guides/rally-seating-position">Rally</a>
+    </nav>
+    <a class="backlink" href="/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg><span>Back</span></a>
     <footer>
         <a href="/terms">Usage notes</a>
         <a href="/copyright">Copyright</a>
         <a href="/privacy">Privacy</a>
         <a href="/impressum">Imprint</a>
-        <a href="/de/">Deutsch</a>
+        <a href="/de/guides/sim-rig-aufbau">Deutsch</a>
     </footer>
 </div>
 </body>

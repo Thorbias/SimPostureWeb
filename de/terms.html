@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Nutzungshinweise — SimPosture</title>
+    <meta name="description" content="Nutzungshinweise für die SimPosture-Apps und die Website simposture.com."/>
+
+    <link rel="canonical" href="https://simposture.com/de/terms"/>
+    <link rel="alternate" hreflang="de" href="https://simposture.com/de/terms"/>
+    <link rel="alternate" hreflang="en" href="https://simposture.com/terms"/>
+    <!-- Pflichtseite, kein Marketing-Inhalt: bewusst nicht in der sitemap.xml und
+         nicht für die Suche vorgesehen. -->
+    <meta name="robots" content="noindex, follow"/>
+
+    <link rel="icon" type="image/png" sizes="32x32" href="/app/favicon-32.png"/>
+    <link rel="icon" type="image/png" sizes="16x16" href="/app/favicon-16.png"/>
+    <meta name="theme-color" content="#0F1829"/>
+
+    <!-- Eigenständige Seite ohne JavaScript und ohne Wasm-Bundle (F-058); CSS
+         wie in privacy.html, siehe Begründung dort. -->
+    <style>
+        :root {
+            --bg: #0F1829;
+            --cyan: #22C7F2;
+            --text: #F8F9FA;
+            --body: #C7CDD3;
+            --muted: #8A93A0;
+            --outline: #2A3038;
+        }
+        * { box-sizing: border-box; }
+        html, body { margin: 0; padding: 0; }
+        body {
+            background: var(--bg);
+            color: var(--body);
+            font-family: system-ui, -apple-system, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            line-height: 1.6;
+            -webkit-font-smoothing: antialiased;
+        }
+        .wrap { max-width: 720px; margin: 0 auto; padding: 0 24px; }
+        a { color: var(--cyan); }
+
+        header { padding: 48px 0 24px; }
+        .brand { display: flex; align-items: center; gap: 14px; margin-bottom: 32px; }
+        .brand img {
+            width: 48px; height: 48px; border-radius: 12px;
+            border: 1px solid var(--cyan); flex: 0 0 auto;
+        }
+        .brand .name { font-size: 22px; font-weight: 700; color: var(--text); }
+
+        h1 { font-size: 30px; line-height: 1.25; color: var(--text); margin: 0 0 8px; font-weight: 700; }
+        .updated { font-size: 14px; color: var(--muted); margin: 0; }
+
+        section { padding: 26px 0; border-top: 1px solid var(--outline); }
+        h2 { font-size: 20px; color: var(--text); margin: 0 0 12px; font-weight: 600; }
+        p { margin: 0 0 12px; }
+        ul { margin: 0 0 12px; padding-left: 20px; }
+        li { margin-bottom: 6px; }
+
+        footer {
+            padding: 28px 0 48px; border-top: 1px solid var(--outline);
+            font-size: 14px; color: var(--muted); text-align: center;
+        }
+        footer a { margin: 0 6px; }
+
+        @media (max-width: 520px) {
+            header { padding: 36px 0 20px; }
+            h1 { font-size: 25px; }
+        }
+    </style>
+    <link rel="stylesheet" href="/assets/site.css"/>
+</head>
+<body>
+    <header class="site-header">
+        <span class="h-spacer"></span>
+        <a class="site-title" href="/de/">
+            <img src="/logo.png" alt="SimPosture"/>
+            <span class="st-text"><span class="st-name">SimPosture</span><span class="st-sub">Engineering your perfect driving position</span></span>
+        </a>
+        <details class="site-menu">
+            <summary><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mis" d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menü</span></summary>
+            <nav class="menu-panel">
+                <a href="/de/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Startseite</span></a>
+                <a href="/app/"><img class="mi-img" src="/logo.png" alt=""/><span>SimPosture App</span></a>
+                <a href="/de/guides/sim-rig-aufbau"><img class="mi-img" src="/assets/seat_bucket.png" alt=""/><span>Sim-Rig Aufbau</span></a>
+                <details class="menu-folder">
+                    <summary><span class="mi-ico"><svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" role="img"><line x1="118.1" y1="240.4" x2="19.0" y2="98.7" stroke="#4A5560" stroke-width="15.8" stroke-linecap="round"/><line x1="111.2" y1="243.0" x2="187.6" y2="207.3" stroke="#4A5560" stroke-width="13.7" stroke-linecap="round"/><line x1="122.3" y1="216.9" x2="208.3" y2="176.8" stroke="#7E8791" stroke-width="29.5" stroke-linecap="round"/><line x1="208.3" y1="176.8" x2="283.1" y2="215.7" stroke="#7E8791" stroke-width="21.1" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="122.3" y2="216.9" stroke="#7E8791" stroke-width="35.8" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="63.8" y2="84.2" stroke="#7E8791" stroke-width="19.0" stroke-linecap="round"/><circle cx="63.8" cy="84.2" r="22.1" fill="#7E8791"/><line x1="61.8" y1="130.5" x2="99.5" y2="182.0" stroke="#7E8791" stroke-width="15.8" stroke-linecap="round"/><line x1="99.5" y1="182.0" x2="157.9" y2="156.3" stroke="#7E8791" stroke-width="13.7" stroke-linecap="round"/><line x1="150.8" y1="182.7" x2="165.0" y2="129.8" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/><circle cx="157.9" cy="156.3" r="5.5" fill="#22C7F2"/><line x1="293.6" y1="196.7" x2="302.0" y2="226.3" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/></svg></span><span>Fahrzeugklassen</span></summary>
+                    <div class="menu-sub">
+                        <a href="/de/guides/strasse-sitzposition"><span>Straße</span></a>
+                        <a href="/de/guides/gt3-sitzposition"><span>GT3</span></a>
+                        <a href="/de/guides/prototyp-sitzposition"><span>Prototyp/LMP</span></a>
+                        <a href="/de/guides/formel-sitzposition"><span>Formel</span></a>
+                        <a href="/de/guides/rallye-sitzposition"><span>Rallye</span></a>
+                    </div>
+                </details>
+                <div class="menu-sep"></div>
+                <a href="/de/terms"><span class="mi-spacer"></span><span>Nutzungshinweise</span></a>
+                <a href="/de/copyright"><span class="mi-spacer"></span><span>Urheberrecht</span></a>
+                <a href="/de/privacy"><span class="mi-spacer"></span><span>Datenschutz</span></a>
+                <a href="/de/impressum"><span class="mi-spacer"></span><span>Impressum</span></a>
+                <a href="/terms"><span class="mi-spacer"></span><span>English</span></a>
+            </nav>
+        </details>
+    </header>
+<div class="wrap">
+    <header>
+
+        <h1>Nutzungshinweise</h1>
+        <p class="updated">Stand: 20. Juli 2026</p>
+    </header>
+
+    <section>
+        <h2>1. Was SimPosture ist</h2>
+        <p>SimPosture schätzt aus einem seitlichen Foto Körperhaltungswinkel und vergleicht sie mit einem hinterlegten Zielprofil. Auf dieser Grundlage gibt die App allgemeine Hinweise zur Sitz- und Körperhaltung.</p>
+    </section>
+
+    <section>
+        <h2>2. Keine medizinische Beratung</h2>
+        <p>Die App stellt keine Diagnose, führt keine Untersuchung durch und ersetzt keine ärztliche, physiotherapeutische oder sonstige gesundheitliche Beratung. Die Bewertungen und Empfehlungen sind allgemeine Ergonomie-Hinweise, kein Heilmittel und keine Therapie.</p>
+    </section>
+
+    <section>
+        <h2>3. Nutzung auf eigene Gefahr</h2>
+        <p>Du entscheidest selbst, ob und wie du die Hinweise umsetzt. Verändere deine Haltung nur so weit, wie es sich für dich gut anfühlt, nicht gegen Schmerzen.</p>
+        <p>Wenn du gesundheitliche Beschwerden hast oder bekommst — etwa Rücken-, Nacken- oder Gelenkschmerzen —, verlasse dich nicht auf die App, sondern suche ärztlichen oder physiotherapeutischen Rat. Das gilt besonders bei bestehenden Vorerkrankungen.</p>
+    </section>
+
+    <section>
+        <h2>4. Maßgebliche Fassung</h2>
+        <p>Diese Nutzungshinweise liegen auf Deutsch und Englisch vor. Rechtlich maßgeblich ist die deutsche Fassung.</p>
+    </section>
+
+    <section>
+        <h2>5. Änderungen</h2>
+        <p>Wir können diese Hinweise anpassen, wenn sich die App oder die rechtlichen Rahmenbedingungen ändern. Es gilt die zum Zeitpunkt der Nutzung veröffentlichte Fassung.</p>
+    </section>
+
+    <footer>
+        <!-- The language switch lives here on every page of the site, so it
+             sits in the same place whichever page the reader is on. -->
+        <a href="/de/">Startseite</a>
+        <a href="/de/copyright">Urheberrecht</a>
+        <a href="/de/privacy">Datenschutz</a>
+        <a href="/de/impressum">Impressum</a>
+        <a href="/terms">English</a>
+    </footer>
+</div>
+</body>
+</html>

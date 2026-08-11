@@ -7,7 +7,7 @@
     <meta name="description" content="Provider identification pursuant to section 5 DDG for simposture.com."/>
 
     <link rel="canonical" href="https://simposture.com/impressum"/>
-    <link rel="alternate" hreflang="de" href="https://simposture.com/impressum-de"/>
+    <link rel="alternate" hreflang="de" href="https://simposture.com/de/impressum"/>
     <link rel="alternate" hreflang="en" href="https://simposture.com/impressum"/>
     <!-- Mandatory page, no marketing content: deliberately left out of sitemap.xml
          and not intended for search. -->
@@ -19,7 +19,7 @@
 
     <!-- Standalone page without JavaScript or the Wasm bundle (F-053); CSS as in
          privacy.html, see the reasoning there. Translation of the German
-         original at /impressum-de, which is the binding version. -->
+         original at /de/impressum, which is the binding version. -->
     <style>
         :root {
             --bg: #0F1829;
@@ -68,14 +68,42 @@
             h1 { font-size: 25px; }
         }
     </style>
+    <link rel="stylesheet" href="/assets/site.css"/>
 </head>
 <body>
+    <header class="site-header">
+        <span class="h-spacer"></span>
+        <a class="site-title" href="/">
+            <img src="/logo.png" alt="SimPosture"/>
+            <span class="st-text"><span class="st-name">SimPosture</span><span class="st-sub">Engineering your perfect driving position</span></span>
+        </a>
+        <details class="site-menu">
+            <summary><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mis" d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></summary>
+            <nav class="menu-panel">
+                <a href="/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Home</span></a>
+                <a href="/app/"><img class="mi-img" src="/logo.png" alt=""/><span>SimPosture App</span></a>
+                <a href="/guides/sim-rig-setup"><img class="mi-img" src="/assets/seat_bucket.png" alt=""/><span>Sim rig setup</span></a>
+                <details class="menu-folder">
+                    <summary><span class="mi-ico"><svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" role="img"><line x1="118.1" y1="240.4" x2="19.0" y2="98.7" stroke="#4A5560" stroke-width="15.8" stroke-linecap="round"/><line x1="111.2" y1="243.0" x2="187.6" y2="207.3" stroke="#4A5560" stroke-width="13.7" stroke-linecap="round"/><line x1="122.3" y1="216.9" x2="208.3" y2="176.8" stroke="#7E8791" stroke-width="29.5" stroke-linecap="round"/><line x1="208.3" y1="176.8" x2="283.1" y2="215.7" stroke="#7E8791" stroke-width="21.1" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="122.3" y2="216.9" stroke="#7E8791" stroke-width="35.8" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="63.8" y2="84.2" stroke="#7E8791" stroke-width="19.0" stroke-linecap="round"/><circle cx="63.8" cy="84.2" r="22.1" fill="#7E8791"/><line x1="61.8" y1="130.5" x2="99.5" y2="182.0" stroke="#7E8791" stroke-width="15.8" stroke-linecap="round"/><line x1="99.5" y1="182.0" x2="157.9" y2="156.3" stroke="#7E8791" stroke-width="13.7" stroke-linecap="round"/><line x1="150.8" y1="182.7" x2="165.0" y2="129.8" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/><circle cx="157.9" cy="156.3" r="5.5" fill="#22C7F2"/><line x1="293.6" y1="196.7" x2="302.0" y2="226.3" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/></svg></span><span>Vehicle classes</span></summary>
+                    <div class="menu-sub">
+                        <a href="/guides/road-seating-position"><span>Road</span></a>
+                        <a href="/guides/gt3-seating-position"><span>GT3</span></a>
+                        <a href="/guides/prototype-seating-position"><span>Prototype/LMP</span></a>
+                        <a href="/guides/formula-seating-position"><span>Formula</span></a>
+                        <a href="/guides/rally-seating-position"><span>Rally</span></a>
+                    </div>
+                </details>
+                <div class="menu-sep"></div>
+                <a href="/terms"><span class="mi-spacer"></span><span>Usage notes</span></a>
+                <a href="/copyright"><span class="mi-spacer"></span><span>Copyright</span></a>
+                <a href="/privacy"><span class="mi-spacer"></span><span>Privacy</span></a>
+                <a href="/impressum"><span class="mi-spacer"></span><span>Imprint</span></a>
+                <a href="/de/impressum"><span class="mi-spacer"></span><span>Deutsch</span></a>
+            </nav>
+        </details>
+    </header>
 <div class="wrap">
     <header>
-        <div class="brand">
-            <a href="/"><img src="logo.png" alt="SimPosture logo"/></a>
-            <div class="name">SimPosture</div>
-        </div>
 
         <h1>Imprint</h1>
         <p class="updated">As of: 3 August 2026</p>
@@ -128,7 +156,7 @@
         <a href="/terms">Usage notes</a>
         <a href="/copyright">Copyright</a>
         <a href="/privacy">Privacy</a>
-        <a href="/impressum-de">Deutsch</a>
+        <a href="/de/impressum">Deutsch</a>
     </footer>
 </div>
 </body>

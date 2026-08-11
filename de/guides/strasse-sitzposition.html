@@ -1,24 +1,24 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="de">
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SimPosture — Sim Racing Seating Position, Measured</title>
-    <meta name="description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <title>Straße-Sitzposition: ideale Winkel & selbst messen | SimPosture</title>
+    <meta name="description" content="Die richtige Straße-Sitzposition für dein Sim-Rig — Zielwerte für Lehne, Hüfte, Knie und Ellbogen, erklärt und mit SimPosture automatisch gemessen."/>
 
-    <link rel="canonical" href="https://simposture.com/"/>
-    <link rel="alternate" hreflang="en" href="https://simposture.com/"/>
-    <link rel="alternate" hreflang="de" href="https://simposture.com/de/"/>
-    <link rel="alternate" hreflang="x-default" href="https://simposture.com/"/>
+    <link rel="canonical" href="https://simposture.com/de/guides/strasse-sitzposition"/>
+    <link rel="alternate" hreflang="en" href="https://simposture.com/guides/road-seating-position"/>
+    <link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/strasse-sitzposition"/>
+    <link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/road-seating-position"/>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta property="og:description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
-    <meta property="og:url" content="https://simposture.com/"/>
+    <meta property="og:title" content="Straße-Sitzposition: ideale Winkel & selbst messen | SimPosture"/>
+    <meta property="og:description" content="Die richtige Straße-Sitzposition für dein Sim-Rig — Zielwerte für Lehne, Hüfte, Knie und Ellbogen, erklärt und mit SimPosture automatisch gemessen."/>
+    <meta property="og:url" content="https://simposture.com/de/guides/strasse-sitzposition"/>
     <meta property="og:image" content="https://simposture.com/og-image.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta name="twitter:description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <meta name="twitter:title" content="Straße-Sitzposition: ideale Winkel & selbst messen | SimPosture"/>
+    <meta name="twitter:description" content="Die richtige Straße-Sitzposition für dein Sim-Rig — Zielwerte für Lehne, Hüfte, Knie und Ellbogen, erklärt und mit SimPosture automatisch gemessen."/>
     <meta name="twitter:image" content="https://simposture.com/og-image.png"/>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/app/favicon-32.png"/>
@@ -27,29 +27,15 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "SimPosture",
-        "description": "Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser.",
-        "operatingSystem": "Web browser",
-        "applicationCategory": "SportsApplication",
-        "inLanguage": "en",
-        "url": "https://simposture.com/",
-        "isAccessibleForFree": true,
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+        "@type": "TechArticle",
+        "headline": "Die richtige Straße-Sitzposition",
+        "description": "Die richtige Straße-Sitzposition für dein Sim-Rig — Zielwerte für Lehne, Hüfte, Knie und Ellbogen, erklärt und mit SimPosture automatisch gemessen.",
+        "inLanguage": "de",
+        "url": "https://simposture.com/de/guides/strasse-sitzposition",
+        "isPartOf": { "@type": "WebSite", "name": "SimPosture", "url": "https://simposture.com/" }
     }
     </script>
 
-    <script>
-        (function () {
-            try {
-                var params = new URLSearchParams(location.search);
-                if (params.get('lang') === 'en') { sessionStorage.setItem('sp-lang', 'en'); return; }
-                if (sessionStorage.getItem('sp-lang') === 'en') return;
-                var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-                if (lang.indexOf('de') === 0) { location.replace('/de/'); }
-            } catch (e) { /* no-op */ }
-        })();
-    </script>
     <style>
         :root {
             --bg: #0F1829; --surface: #16223A; --cyan: #22C7F2; --on-cyan: #0C1013;
@@ -208,100 +194,79 @@
 <body>
     <header class="site-header">
         <span class="h-spacer"></span>
-        <a class="site-title" href="/">
+        <a class="site-title" href="/de/">
             <img src="/logo.png" alt="SimPosture"/>
             <span class="st-text"><span class="st-name">SimPosture</span><span class="st-sub">Engineering your perfect driving position</span></span>
         </a>
         <details class="site-menu">
-            <summary><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mis" d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menu</span></summary>
+            <summary><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mis" d="M4 7h16M4 12h16M4 17h16"/></svg><span>Menü</span></summary>
             <nav class="menu-panel">
-                <a href="/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Home</span></a>
+                <a href="/de/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/></svg><span>Startseite</span></a>
                 <a href="/app/"><img class="mi-img" src="/logo.png" alt=""/><span>SimPosture App</span></a>
-                <a href="/guides/sim-rig-setup"><img class="mi-img" src="/assets/seat_bucket.png" alt=""/><span>Sim rig setup</span></a>
+                <a href="/de/guides/sim-rig-aufbau"><img class="mi-img" src="/assets/seat_bucket.png" alt=""/><span>Sim-Rig Aufbau</span></a>
                 <details class="menu-folder">
-                    <summary><span class="mi-ico"><svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" role="img"><line x1="118.1" y1="240.4" x2="19.0" y2="98.7" stroke="#4A5560" stroke-width="15.8" stroke-linecap="round"/><line x1="111.2" y1="243.0" x2="187.6" y2="207.3" stroke="#4A5560" stroke-width="13.7" stroke-linecap="round"/><line x1="122.3" y1="216.9" x2="208.3" y2="176.8" stroke="#7E8791" stroke-width="29.5" stroke-linecap="round"/><line x1="208.3" y1="176.8" x2="283.1" y2="215.7" stroke="#7E8791" stroke-width="21.1" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="122.3" y2="216.9" stroke="#7E8791" stroke-width="35.8" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="63.8" y2="84.2" stroke="#7E8791" stroke-width="19.0" stroke-linecap="round"/><circle cx="63.8" cy="84.2" r="22.1" fill="#7E8791"/><line x1="61.8" y1="130.5" x2="99.5" y2="182.0" stroke="#7E8791" stroke-width="15.8" stroke-linecap="round"/><line x1="99.5" y1="182.0" x2="157.9" y2="156.3" stroke="#7E8791" stroke-width="13.7" stroke-linecap="round"/><line x1="150.8" y1="182.7" x2="165.0" y2="129.8" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/><circle cx="157.9" cy="156.3" r="5.5" fill="#22C7F2"/><line x1="293.6" y1="196.7" x2="302.0" y2="226.3" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/></svg></span><span>Vehicle classes</span></summary>
+                    <summary><span class="mi-ico"><svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" role="img"><line x1="118.1" y1="240.4" x2="19.0" y2="98.7" stroke="#4A5560" stroke-width="15.8" stroke-linecap="round"/><line x1="111.2" y1="243.0" x2="187.6" y2="207.3" stroke="#4A5560" stroke-width="13.7" stroke-linecap="round"/><line x1="122.3" y1="216.9" x2="208.3" y2="176.8" stroke="#7E8791" stroke-width="29.5" stroke-linecap="round"/><line x1="208.3" y1="176.8" x2="283.1" y2="215.7" stroke="#7E8791" stroke-width="21.1" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="122.3" y2="216.9" stroke="#7E8791" stroke-width="35.8" stroke-linecap="round"/><line x1="61.8" y1="130.5" x2="63.8" y2="84.2" stroke="#7E8791" stroke-width="19.0" stroke-linecap="round"/><circle cx="63.8" cy="84.2" r="22.1" fill="#7E8791"/><line x1="61.8" y1="130.5" x2="99.5" y2="182.0" stroke="#7E8791" stroke-width="15.8" stroke-linecap="round"/><line x1="99.5" y1="182.0" x2="157.9" y2="156.3" stroke="#7E8791" stroke-width="13.7" stroke-linecap="round"/><line x1="150.8" y1="182.7" x2="165.0" y2="129.8" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/><circle cx="157.9" cy="156.3" r="5.5" fill="#22C7F2"/><line x1="293.6" y1="196.7" x2="302.0" y2="226.3" stroke="#22C7F2" stroke-width="7.2" stroke-linecap="round"/></svg></span><span>Fahrzeugklassen</span></summary>
                     <div class="menu-sub">
-                        <a href="/guides/road-seating-position"><span>Road</span></a>
-                        <a href="/guides/gt3-seating-position"><span>GT3</span></a>
-                        <a href="/guides/prototype-seating-position"><span>Prototype/LMP</span></a>
-                        <a href="/guides/formula-seating-position"><span>Formula</span></a>
-                        <a href="/guides/rally-seating-position"><span>Rally</span></a>
+                        <a href="/de/guides/strasse-sitzposition"><span>Straße</span></a>
+                        <a href="/de/guides/gt3-sitzposition"><span>GT3</span></a>
+                        <a href="/de/guides/prototyp-sitzposition"><span>Prototyp/LMP</span></a>
+                        <a href="/de/guides/formel-sitzposition"><span>Formel</span></a>
+                        <a href="/de/guides/rallye-sitzposition"><span>Rallye</span></a>
                     </div>
                 </details>
                 <div class="menu-sep"></div>
-                <a href="/terms"><span class="mi-spacer"></span><span>Usage notes</span></a>
-                <a href="/copyright"><span class="mi-spacer"></span><span>Copyright</span></a>
-                <a href="/privacy"><span class="mi-spacer"></span><span>Privacy</span></a>
-                <a href="/impressum"><span class="mi-spacer"></span><span>Imprint</span></a>
-                <a href="/de/"><span class="mi-spacer"></span><span>Deutsch</span></a>
+                <a href="/de/terms"><span class="mi-spacer"></span><span>Nutzungshinweise</span></a>
+                <a href="/de/copyright"><span class="mi-spacer"></span><span>Urheberrecht</span></a>
+                <a href="/de/privacy"><span class="mi-spacer"></span><span>Datenschutz</span></a>
+                <a href="/de/impressum"><span class="mi-spacer"></span><span>Impressum</span></a>
+                <a href="/guides/road-seating-position"><span class="mi-spacer"></span><span>English</span></a>
             </nav>
         </details>
     </header>
 <div class="wrap">
-    <header class="hero">
-        <img class="hero-shot" src="/rating-screenshot.jpg" alt="SimPosture rating of a GT3 seating position with angle markers and score"/>
-        <h1>The right seating position in your sim rig — measured, not guessed.</h1>
-        <p class="lead">SimPosture photographs you from the side in your seating position, analyses your posture and rates it for your vehicle class. You get a score per category and concrete tips — and get closer to the optimal position photo by photo.</p>
-        <div class="hero-actions">
-            <a class="cta" href="/app/">Start Webapp</a>
-            <div class="trust">
-                <svg class="shield" viewBox="0 0 24 24" aria-hidden="true">
-                    <path class="shield-fill" d="M12 1L12 23c5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
-                    <path class="shield-outline" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
-                </svg>
-                <span>Privacy 1st — runs entirely on your device.</span>
-            </div>
+    <main>
+        <h1>Die richtige Straße-Sitzposition</h1>
+        <p class="lead">Die Straßen-Sitzposition ist die aufrechteste aller Klassen — nah daran, wie du in einem echten Straßenauto sitzt. Die Lehne steht fast senkrecht, die Hüfte ist weit geöffnet, und das Lenkrad sitzt etwa auf Schulterhöhe und nah am Körper. Sie ist der natürliche Einstieg für alle, die neu ins Sim Racing kommen, und am bequemsten über lange Sessions zu halten.</p>
+        <figure class="seatfig">
+            <div class="seatfig-svg"><svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" role="img" width="340" height="300"><rect x="0" y="0" width="340" height="300" fill="#16223A"/><rect x="0" y="286.9" width="340" height="13.1" fill="#0F1829"/><line x1="0" y1="286.9" x2="340" y2="286.9" stroke="#22C7F2" stroke-width="4.8" stroke-opacity="0.85"/><line x1="91.8" y1="225.9" x2="45.5" y2="53.1" stroke="#4A5560" stroke-width="16.4" stroke-linecap="round"/><line x1="84.1" y1="226.0" x2="171.0" y2="218.4" stroke="#4A5560" stroke-width="14.2" stroke-linecap="round"/><line x1="104.1" y1="204.5" x2="202.2" y2="200.3" stroke="#7E8791" stroke-width="30.5" stroke-linecap="round"/><line x1="202.2" y1="200.3" x2="255.3" y2="269.5" stroke="#7E8791" stroke-width="21.8" stroke-linecap="round"/><line x1="75.9" y1="99.2" x2="104.1" y2="204.5" stroke="#7E8791" stroke-width="37.1" stroke-linecap="round"/><line x1="75.9" y1="99.2" x2="78.0" y2="51.3" stroke="#7E8791" stroke-width="19.6" stroke-linecap="round"/><circle cx="78.0" cy="51.3" r="22.9" fill="#7E8791"/><line x1="75.9" y1="99.2" x2="112.5" y2="154.1" stroke="#7E8791" stroke-width="16.4" stroke-linecap="round"/><line x1="112.5" y1="154.1" x2="177.2" y2="141.2" stroke="#7E8791" stroke-width="14.2" stroke-linecap="round"/><line x1="166.4" y1="167.4" x2="188.1" y2="115.0" stroke="#22C7F2" stroke-width="7.4" stroke-linecap="round"/><circle cx="177.2" cy="141.2" r="5.7" fill="#22C7F2"/><line x1="266.2" y1="249.8" x2="274.9" y2="280.4" stroke="#22C7F2" stroke-width="7.4" stroke-linecap="round"/></svg></div>
+        </figure>
+        <p class="seatfig-note">Die Grafik zeigt einen Recliner-Sitz auf fester, waagerechter Montage — den Aufbau, den diese Zielwerte annehmen. Wie dein eigener Sitztyp und deine Befestigung verändern, was du verstellen kannst, steht in den <a href="/de/guides/sim-rig-aufbau">Rig-Grundlagen</a>.</p>
+        <section>
+            <h2>Ziel-Sitzposition für Straße</h2>
+            <p class="bands">Lehne 10–20° · Hüfte 95–110° · Knie 115–135° · Ellbogen 100–125° · Kopf −10 bis +15°</p>
+            <p>Sitzt du zu zusammengesackt, verlierst du die freie Sicht über das Lenkrad; sitzt du zu weit hinten, musst du nach dem Lenkrad greifen und ermüdest die Schultern. Die aufrechten Winkel halten dich entspannt und unter Kontrolle, ganz ohne rennspezifische Belastung.</p>
+            <p>Die Kopfbalance ist der einzige Zielwert, der sich nicht mit der Klasse ändert: Sie folgt aus Schwerkraft und Muskellast, deshalb gilt für jedes Auto dasselbe Band von −10° bis +15°.</p>
+        <div class="whatgood">
+            <h3>Was die einzelnen Zielwerte bedeuten</h3>
+            <ul>
+                    <li><b>Lehne 10–20° optimal</b> — aufrechter sitzt du höher und unruhiger, stärker zurückgelehnt leiden Sicht und Nackenhaltung.</li>
+                    <li><b>Hüftwinkel 95–110° optimal</b> — enger drückt es Oberkörper und Beine zusammen, weiter geöffnet verlierst du Halt in schnellen Kurven.</li>
+                    <li><b>Kniewinkel 115–135° optimal</b> — stärker gebeugt sitzt du eingeklemmt und verlierst Pedalweg, stärker gestreckt fehlt Kraft und Gefühl an der Bremse.</li>
+                    <li><b>Ellbogenwinkel 100–125° optimal</b> — stärker angewinkelt sitzt du zu nah und die Arme ermüden, stärker gestreckt fehlt Hebel beim schnellen Gegenlenken.</li>
+                    <li><b>Kopfbalance −10 bis +15° optimal</b> — gemessen gegen die Senkrechte, unabhängig von der Lehne: fällt der Kopf dahinter zurück, hält der Hals ihn, steht er davor, tragen die Nackenstrecker dauerhaft mit.</li>
+            </ul>
         </div>
-    </header>
-    <section id="what">
-        <h2>What is SimPosture?</h2>
-        <p>An ergonomics tool for sim racers. The app detects your body posture in the image, measures the angles that matter — backrest, knees, arms, distance to the wheel — and compares them against what's ideal for your vehicle class. A GT3 seating position is a different thing from a formula car; SimPosture knows the difference.</p>
-    </section>
-    <section id="who">
-        <h2>Who is it for?</h2>
-        <p>For sim racers with their own rig and racing seat — from an entry-level build to a dedicated rig with a formula seating position. No ergonomics background needed; the app guides you.</p>
-    </section>
-    <section id="how">
-        <h2>How it works</h2>
-        <ol class="steps">
-            <li><b>Capture</b> — camera to the side of your rig, one photo in your typical seating position.</li>
-            <li><b>Analyse</b> — the app detects your posture and measures the relevant angles automatically.</li>
-            <li><b>Improve</b> — you get a rating with concrete tips, adjust your position and shoot again.</li>
-        </ol>
-    </section>
-    <section id="basics">
-        <h2>The basics: sim rig setup</h2>
-        <p>Which angles you can even adjust depends on your seat and how it is mounted — recliner or bucket, angle-adjustable or fixed. Start here: <a href="/guides/sim-rig-setup">Sim rig setup: seat type and mounting</a>.</p>
-    </section>
-    <section id="classes">
-        <h2>For every vehicle class</h2>
-        <p>Road, GT3, Prototype/LMP, Formula and Rally each have their own target values for the seating position — from upright and close to the wheel to strongly reclined with raised legs. SimPosture rates against the class you actually drive. The target angles per class are explained in our guides:</p>
-        <ul class="guide-links">
-            <li><a href="/guides/road-seating-position">Road</a></li>
-            <li><a href="/guides/gt3-seating-position">GT3</a></li>
-            <li><a href="/guides/prototype-seating-position">Prototype/LMP</a></li>
-            <li><a href="/guides/formula-seating-position">Formula</a></li>
-            <li><a href="/guides/rally-seating-position">Rally</a></li>
-        </ul>
-    </section>
-    <section id="privacy">
-        <h2>Your data stays with you</h2>
-        <p>Photo and analysis run entirely on your device. No upload, no servers, no sign-up, no tracking services — the app only needs the camera, plus your photo library when you pick an image there or save a rating, and everything works offline after loading.</p>
-    </section>
-    <section id="devices">
-        <h2>On every device</h2>
-        <p>Available for iOS <em>(coming soon)</em> and Android <em>(coming soon)</em>, or right now directly in your browser at the rig PC — no install.</p>
-        <p>We're currently looking for Android beta testers — <a href="https://groups.google.com/g/simposture-beta-test-open" target="_blank" rel="noopener">sign up in the Google Group</a>.</p>
-    </section>
-    <div class="cta-repeat">
-        <a class="cta" href="/app/">Start Webapp</a>
-    </div>
+        </section>
+        <section>
+            <h2>So prüfst du deine eigene Position</h2>
+            <p>Statt deine Position gegen ein Foto zu schätzen, misst SimPosture diese Winkel aus einem einzigen Seitenfoto deines Rigs und bewertet sie gegen den Zielbereich für Straße — mit konkreten Tipps, was zu verstellen ist. Nimm das Foto von der Seite auf, ganzer Körper von Kopf bis Fuß im Bild, Kamera gerade gehalten und ein Pedal voll durchgetreten.</p>
+        </section>
+    </main>
+    <nav class="compare">
+        <h2>Mit anderen Klassen vergleichen</h2>
+        <a href="/de/guides/gt3-sitzposition">GT3</a>
+        <a href="/de/guides/prototyp-sitzposition">Prototyp/LMP</a>
+        <a href="/de/guides/formel-sitzposition">Formel</a>
+        <a href="/de/guides/rallye-sitzposition">Rallye</a>
+        <a href="/de/guides/sim-rig-aufbau">Rig-Grundlagen</a>
+    </nav>
+    <a class="backlink" href="/de/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg><span>Zurück</span></a>
     <footer>
-        <a href="/terms">Usage notes</a>
-        <a href="/copyright">Copyright</a>
-        <a href="/privacy">Privacy</a>
-        <a href="/impressum">Imprint</a>
-        <a href="/de/">Deutsch</a>
+        <a href="/de/terms">Nutzungshinweise</a>
+        <a href="/de/copyright">Urheberrecht</a>
+        <a href="/de/privacy">Datenschutz</a>
+        <a href="/de/impressum">Impressum</a>
+        <a href="/guides/road-seating-position">English</a>
     </footer>
 </div>
 </body>

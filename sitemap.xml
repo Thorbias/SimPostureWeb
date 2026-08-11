@@ -4,13 +4,85 @@
     <url>
         <loc>https://simposture.com/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/"/>
     </url>
     <url>
-        <loc>https://simposture.com/de.html</loc>
+        <loc>https://simposture.com/de/</loc>
         <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/"/>
-        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de.html"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/"/>
         <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/guides/gt3-seating-position</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/gt3-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/gt3-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/gt3-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/de/guides/gt3-sitzposition</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/gt3-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/gt3-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/gt3-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/guides/formula-seating-position</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/formula-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/formel-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/formula-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/de/guides/formel-sitzposition</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/formula-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/formel-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/formula-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/guides/prototype-seating-position</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/prototype-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/prototyp-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/prototype-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/de/guides/prototyp-sitzposition</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/prototype-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/prototyp-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/prototype-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/guides/rally-seating-position</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/rally-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/rallye-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/rally-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/de/guides/rallye-sitzposition</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/rally-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/rallye-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/rally-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/guides/road-seating-position</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/road-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/strasse-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/road-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/de/guides/strasse-sitzposition</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/road-seating-position"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/strasse-sitzposition"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/road-seating-position"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/guides/sim-rig-setup</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/sim-rig-setup"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/sim-rig-aufbau"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/sim-rig-setup"/>
+    </url>
+    <url>
+        <loc>https://simposture.com/de/guides/sim-rig-aufbau</loc>
+        <xhtml:link rel="alternate" hreflang="en" href="https://simposture.com/guides/sim-rig-setup"/>
+        <xhtml:link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/sim-rig-aufbau"/>
+        <xhtml:link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/sim-rig-setup"/>
     </url>
 </urlset>

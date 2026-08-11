@@ -3,22 +3,22 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>SimPosture — Sim Racing Seating Position, Measured</title>
-    <meta name="description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <title>Prototype/LMP Seating Position: Ideal Angles and How to Measure | SimPosture</title>
+    <meta name="description" content="The correct Prototype/LMP seating position for your sim rig — target backrest, hip, knee and elbow angles, explained and measured automatically with SimPosture."/>
 
-    <link rel="canonical" href="https://simposture.com/"/>
-    <link rel="alternate" hreflang="en" href="https://simposture.com/"/>
-    <link rel="alternate" hreflang="de" href="https://simposture.com/de/"/>
-    <link rel="alternate" hreflang="x-default" href="https://simposture.com/"/>
+    <link rel="canonical" href="https://simposture.com/guides/prototype-seating-position"/>
+    <link rel="alternate" hreflang="en" href="https://simposture.com/guides/prototype-seating-position"/>
+    <link rel="alternate" hreflang="de" href="https://simposture.com/de/guides/prototyp-sitzposition"/>
+    <link rel="alternate" hreflang="x-default" href="https://simposture.com/guides/prototype-seating-position"/>
 
     <meta property="og:type" content="website"/>
-    <meta property="og:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta property="og:description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
-    <meta property="og:url" content="https://simposture.com/"/>
+    <meta property="og:title" content="Prototype/LMP Seating Position: Ideal Angles and How to Measure | SimPosture"/>
+    <meta property="og:description" content="The correct Prototype/LMP seating position for your sim rig — target backrest, hip, knee and elbow angles, explained and measured automatically with SimPosture."/>
+    <meta property="og:url" content="https://simposture.com/guides/prototype-seating-position"/>
     <meta property="og:image" content="https://simposture.com/og-image.png"/>
     <meta name="twitter:card" content="summary_large_image"/>
-    <meta name="twitter:title" content="SimPosture — Sim Racing Seating Position, Measured"/>
-    <meta name="twitter:description" content="Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser."/>
+    <meta name="twitter:title" content="Prototype/LMP Seating Position: Ideal Angles and How to Measure | SimPosture"/>
+    <meta name="twitter:description" content="The correct Prototype/LMP seating position for your sim rig — target backrest, hip, knee and elbow angles, explained and measured automatically with SimPosture."/>
     <meta name="twitter:image" content="https://simposture.com/og-image.png"/>
 
     <link rel="icon" type="image/png" sizes="32x32" href="/app/favicon-32.png"/>
@@ -27,29 +27,15 @@
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
-        "@type": "SoftwareApplication",
-        "name": "SimPosture",
-        "description": "Measure and rate your sim racing seating position by vehicle class — GT3, Formula, Prototype and more. Runs on your device, private, works in the browser.",
-        "operatingSystem": "Web browser",
-        "applicationCategory": "SportsApplication",
+        "@type": "TechArticle",
+        "headline": "The correct Prototype/LMP seating position",
+        "description": "The correct Prototype/LMP seating position for your sim rig — target backrest, hip, knee and elbow angles, explained and measured automatically with SimPosture.",
         "inLanguage": "en",
-        "url": "https://simposture.com/",
-        "isAccessibleForFree": true,
-        "offers": { "@type": "Offer", "price": "0", "priceCurrency": "EUR" }
+        "url": "https://simposture.com/guides/prototype-seating-position",
+        "isPartOf": { "@type": "WebSite", "name": "SimPosture", "url": "https://simposture.com/" }
     }
     </script>
 
-    <script>
-        (function () {
-            try {
-                var params = new URLSearchParams(location.search);
-                if (params.get('lang') === 'en') { sessionStorage.setItem('sp-lang', 'en'); return; }
-                if (sessionStorage.getItem('sp-lang') === 'en') return;
-                var lang = (navigator.language || navigator.userLanguage || '').toLowerCase();
-                if (lang.indexOf('de') === 0) { location.replace('/de/'); }
-            } catch (e) { /* no-op */ }
-        })();
-    </script>
     <style>
         :root {
             --bg: #0F1829; --surface: #16223A; --cyan: #22C7F2; --on-cyan: #0C1013;
@@ -233,75 +219,54 @@
                 <a href="/copyright"><span class="mi-spacer"></span><span>Copyright</span></a>
                 <a href="/privacy"><span class="mi-spacer"></span><span>Privacy</span></a>
                 <a href="/impressum"><span class="mi-spacer"></span><span>Imprint</span></a>
-                <a href="/de/"><span class="mi-spacer"></span><span>Deutsch</span></a>
+                <a href="/de/guides/prototyp-sitzposition"><span class="mi-spacer"></span><span>Deutsch</span></a>
             </nav>
         </details>
     </header>
 <div class="wrap">
-    <header class="hero">
-        <img class="hero-shot" src="/rating-screenshot.jpg" alt="SimPosture rating of a GT3 seating position with angle markers and score"/>
-        <h1>The right seating position in your sim rig — measured, not guessed.</h1>
-        <p class="lead">SimPosture photographs you from the side in your seating position, analyses your posture and rates it for your vehicle class. You get a score per category and concrete tips — and get closer to the optimal position photo by photo.</p>
-        <div class="hero-actions">
-            <a class="cta" href="/app/">Start Webapp</a>
-            <div class="trust">
-                <svg class="shield" viewBox="0 0 24 24" aria-hidden="true">
-                    <path class="shield-fill" d="M12 1L12 23c5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
-                    <path class="shield-outline" d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
-                </svg>
-                <span>Privacy 1st — runs entirely on your device.</span>
-            </div>
+    <main>
+        <h1>The correct Prototype/LMP seating position</h1>
+        <p class="lead">Prototype and LMP cars lay the driver back further, with the legs raised toward the wheel and the feet high on the pedals. The wheel sits between shoulder and eye level. It is a committed, low position that trades comfort for a low centre of gravity and a compact cockpit.</p>
+        <figure class="seatfig">
+            <div class="seatfig-svg"><svg viewBox="0 0 340 300" xmlns="http://www.w3.org/2000/svg" role="img" width="340" height="300"><rect x="0" y="0" width="340" height="300" fill="#16223A"/><rect x="0" y="247.8" width="340" height="52.2" fill="#0F1829"/><line x1="0" y1="247.8" x2="340" y2="247.8" stroke="#22C7F2" stroke-width="4.5" stroke-opacity="0.85"/><line x1="125.8" y1="236.0" x2="18.5" y2="105.8" stroke="#4A5560" stroke-width="15.4" stroke-linecap="round"/><line x1="119.0" y1="239.0" x2="191.0" y2="199.1" stroke="#4A5560" stroke-width="13.4" stroke-linecap="round"/><line x1="128.0" y1="212.8" x2="209.0" y2="167.9" stroke="#7E8791" stroke-width="28.8" stroke-linecap="round"/><line x1="209.0" y1="167.9" x2="284.5" y2="200.7" stroke="#7E8791" stroke-width="20.6" stroke-linecap="round"/><line x1="62.6" y1="133.4" x2="128.0" y2="212.8" stroke="#7E8791" stroke-width="35.0" stroke-linecap="round"/><line x1="62.6" y1="133.4" x2="64.6" y2="88.2" stroke="#7E8791" stroke-width="18.5" stroke-linecap="round"/><circle cx="64.6" cy="88.2" r="21.6" fill="#7E8791"/><line x1="62.6" y1="133.4" x2="110.3" y2="173.4" stroke="#7E8791" stroke-width="15.4" stroke-linecap="round"/><line x1="110.3" y1="173.4" x2="158.0" y2="133.4" stroke="#7E8791" stroke-width="13.4" stroke-linecap="round"/><line x1="158.0" y1="160.2" x2="158.0" y2="106.7" stroke="#22C7F2" stroke-width="7.0" stroke-linecap="round"/><circle cx="158.0" cy="133.4" r="5.3" fill="#22C7F2"/><line x1="294.7" y1="182.2" x2="303.0" y2="211.0" stroke="#22C7F2" stroke-width="7.0" stroke-linecap="round"/></svg></div>
+        </figure>
+        <p class="seatfig-note">The graphic and values assume a bucket seat on an angle-adjustable mount, which prototypes effectively require. On a fixed mount the reachable angles differ; see the <a href="/guides/sim-rig-setup">rig-setup basics</a>.</p>
+        <section>
+            <h2>Target seating position for Prototype/LMP</h2>
+            <p class="bands">Backrest 34–45° · Hip 95–106° · Knee 120–135° · Elbow 90–110° · Head −10 to +15°</p>
+            <p>Raised legs need real support: without an angle-adjustable seat mount the thighs hang unsupported and tire quickly. Sit too upright for the class and the reclined ergonomics the car was designed around no longer apply.</p>
+            <p>Head balance is the one target that does not change with the class: it is set by gravity and muscle load, so the same −10° to +15° band applies to every car.</p>
+        <div class="whatgood">
+            <h3>What each target value means</h3>
+            <ul>
+                    <li><b>Backrest 34–45° optimal</b> — more upright and you sit higher and twitchier, more reclined and visibility and neck posture suffer.</li>
+                    <li><b>Hip angle 95–106° optimal</b> — tighter compresses your torso and legs, more open and you lose support in fast corners.</li>
+                    <li><b>Knee angle 120–135° optimal</b> — more bent and you sit cramped and lose pedal travel, more extended and you lack force and feel at the brake.</li>
+                    <li><b>Elbow angle 90–110° optimal</b> — more bent and you sit too close and your arms tire, more extended and you lack leverage for quick counter-steering.</li>
+                    <li><b>Head balance −10 to +15° optimal</b> — measured against the vertical, independent of the backrest: fall behind it and your neck holds the head up, sit ahead of it and the neck extensors carry it all stint.</li>
+            </ul>
         </div>
-    </header>
-    <section id="what">
-        <h2>What is SimPosture?</h2>
-        <p>An ergonomics tool for sim racers. The app detects your body posture in the image, measures the angles that matter — backrest, knees, arms, distance to the wheel — and compares them against what's ideal for your vehicle class. A GT3 seating position is a different thing from a formula car; SimPosture knows the difference.</p>
-    </section>
-    <section id="who">
-        <h2>Who is it for?</h2>
-        <p>For sim racers with their own rig and racing seat — from an entry-level build to a dedicated rig with a formula seating position. No ergonomics background needed; the app guides you.</p>
-    </section>
-    <section id="how">
-        <h2>How it works</h2>
-        <ol class="steps">
-            <li><b>Capture</b> — camera to the side of your rig, one photo in your typical seating position.</li>
-            <li><b>Analyse</b> — the app detects your posture and measures the relevant angles automatically.</li>
-            <li><b>Improve</b> — you get a rating with concrete tips, adjust your position and shoot again.</li>
-        </ol>
-    </section>
-    <section id="basics">
-        <h2>The basics: sim rig setup</h2>
-        <p>Which angles you can even adjust depends on your seat and how it is mounted — recliner or bucket, angle-adjustable or fixed. Start here: <a href="/guides/sim-rig-setup">Sim rig setup: seat type and mounting</a>.</p>
-    </section>
-    <section id="classes">
-        <h2>For every vehicle class</h2>
-        <p>Road, GT3, Prototype/LMP, Formula and Rally each have their own target values for the seating position — from upright and close to the wheel to strongly reclined with raised legs. SimPosture rates against the class you actually drive. The target angles per class are explained in our guides:</p>
-        <ul class="guide-links">
-            <li><a href="/guides/road-seating-position">Road</a></li>
-            <li><a href="/guides/gt3-seating-position">GT3</a></li>
-            <li><a href="/guides/prototype-seating-position">Prototype/LMP</a></li>
-            <li><a href="/guides/formula-seating-position">Formula</a></li>
-            <li><a href="/guides/rally-seating-position">Rally</a></li>
-        </ul>
-    </section>
-    <section id="privacy">
-        <h2>Your data stays with you</h2>
-        <p>Photo and analysis run entirely on your device. No upload, no servers, no sign-up, no tracking services — the app only needs the camera, plus your photo library when you pick an image there or save a rating, and everything works offline after loading.</p>
-    </section>
-    <section id="devices">
-        <h2>On every device</h2>
-        <p>Available for iOS <em>(coming soon)</em> and Android <em>(coming soon)</em>, or right now directly in your browser at the rig PC — no install.</p>
-        <p>We're currently looking for Android beta testers — <a href="https://groups.google.com/g/simposture-beta-test-open" target="_blank" rel="noopener">sign up in the Google Group</a>.</p>
-    </section>
-    <div class="cta-repeat">
-        <a class="cta" href="/app/">Start Webapp</a>
-    </div>
+        </section>
+        <section>
+            <h2>How to check your own position</h2>
+            <p>Instead of eyeballing your position against a photo, SimPosture measures these angles from a single side-on photo of your rig and rates them against the Prototype/LMP target range — with concrete tips on what to adjust. Take the shot from the side, whole body in frame from head to foot, camera held level and one pedal fully pressed.</p>
+        </section>
+    </main>
+    <nav class="compare">
+        <h2>Compare with other classes</h2>
+        <a href="/guides/road-seating-position">Road</a>
+        <a href="/guides/gt3-seating-position">GT3</a>
+        <a href="/guides/formula-seating-position">Formula</a>
+        <a href="/guides/rally-seating-position">Rally</a>
+        <a href="/guides/sim-rig-setup">Rig setup basics</a>
+    </nav>
+    <a class="backlink" href="/"><svg class="mi-svg" viewBox="0 0 24 24" aria-hidden="true"><path class="mi" d="M20 11H7.83l5.59-5.59L12 4l-8 8 8 8 1.41-1.41L7.83 13H20v-2z"/></svg><span>Back</span></a>
     <footer>
         <a href="/terms">Usage notes</a>
         <a href="/copyright">Copyright</a>
         <a href="/privacy">Privacy</a>
         <a href="/impressum">Imprint</a>
-        <a href="/de/">Deutsch</a>
+        <a href="/de/guides/prototyp-sitzposition">Deutsch</a>
     </footer>
 </div>
 </body>
