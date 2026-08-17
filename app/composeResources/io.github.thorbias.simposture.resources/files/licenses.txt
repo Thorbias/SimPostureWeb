@@ -294,8 +294,8 @@ THE SOFTWARE.
 Apache License 2.0
 ----------------------------------------------------------------------
 
-Applies to MediaPipe Tasks Vision, the Pose Landmarker model and most of the
-libraries listed below.
+Applies to most of the libraries listed below, and to the bundled components
+above shown as Apache License 2.0.
 
                                  Apache License
                            Version 2.0, January 2004
@@ -1952,4 +1952,4 @@ License: The Apache License, Version 2.0 - http://www.apache.org/licenses/LICENS
 --------------------------------------------------------------------------------
 
 
-This report was generated at Tue Aug 11 08:54:22 UTC 2026.
+This report was generated at Mon Aug 17 10:57:46 UTC 2026.
