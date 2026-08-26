@@ -119,6 +119,16 @@
         .shield-fill { fill: var(--cyan); }
         .shield-outline { fill: none; stroke: var(--cyan); stroke-width: 1.6; stroke-linejoin: round; }
 
+        /* ---- store badges ---- */
+        .store-hint { margin: 26px 0 0; font-size: 14px; color: var(--muted); }
+        .store-badges { display: flex; flex-wrap: wrap; gap: 12px; align-items: center; justify-content: center; margin: 12px 0 0; }
+        .store-badges a { display: inline-flex; }
+        .store-badges img { display: block; width: auto; }
+        .store-badges .badge-ios { height: 46px; }
+        .store-badges .badge-android { height: 60px; }
+        section .store-badges { margin-top: 18px; }
+        .store-cta { text-align: center; margin-top: 16px; }
+
         /* ---- headings: centered titles ---- */
         h1 { font-size: 32px; line-height: 1.25; color: var(--text); margin: 24px 0 20px; font-weight: 700; text-align: center; }
         h2 { font-size: 22px; color: var(--text); margin: 0 0 14px; font-weight: 600; }
@@ -233,6 +243,15 @@
         <p class="lead">SimPosture fotografiert dich seitlich in deiner Sitzposition, analysiert deine Haltung und bewertet sie für deine Fahrzeugklasse. Du bekommst pro Kategorie eine Punktzahl und konkrete Tipps — und näherst dich Foto für Foto der optimalen Position.</p>
         <div class="hero-actions">
             <a class="cta" href="/app/">Webapp starten</a>
+            <p class="store-hint">Oder hol dir die native App:</p>
+            <div class="store-badges">
+                <a href="https://apps.apple.com/app/id6802281275" aria-label="SimPosture im App Store laden">
+                    <img class="badge-ios" src="/assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"/>
+                </a>
+                <a href="https://play.google.com/store/apps/details?id=com.simposture.app&amp;hl=de" aria-label="SimPosture bei Google Play holen">
+                    <img class="badge-android" src="/assets/google-play-de.png" alt="Jetzt bei Google Play" width="646" height="250"/>
+                </a>
+            </div>
             <div class="trust">
                 <svg class="shield" viewBox="0 0 24 24" aria-hidden="true">
                     <path class="shield-fill" d="M12 1L12 23c5.16 -1.26 9 -6.45 9 -12V5l-9 -4z"/>
@@ -279,11 +298,19 @@
     </section>
     <section id="devices">
         <h2>Auf allen Geräten</h2>
-        <p>Als App für iOS <em>(coming soon)</em> und Android <em>(coming soon)</em> oder schon jetzt direkt im Browser am Rig-PC — ohne Installation.</p>
+        <p>Jetzt als native App für iOS und Android — oder direkt im Browser am Rig-PC, ganz ohne Installation.</p>
+        <div class="store-badges">
+            <a href="https://apps.apple.com/app/id6802281275" aria-label="SimPosture im App Store laden">
+                <img class="badge-ios" src="/assets/app-store-de.svg" alt="Laden im App Store" width="120" height="40"/>
+            </a>
+            <a href="https://play.google.com/store/apps/details?id=com.simposture.app&amp;hl=de" aria-label="SimPosture bei Google Play holen">
+                <img class="badge-android" src="/assets/google-play-de.png" alt="Jetzt bei Google Play" width="646" height="250"/>
+            </a>
+        </div>
+        <div class="store-cta">
+            <a class="cta" href="/app/">Webapp starten</a>
+        </div>
     </section>
-    <div class="cta-repeat">
-        <a class="cta" href="/app/">Webapp starten</a>
-    </div>
     <footer>
         <a href="/de/terms">Nutzungshinweise</a>
         <a href="/de/copyright">Urheberrecht</a>
