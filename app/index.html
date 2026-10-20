@@ -16,7 +16,24 @@
             height: 100%;
             overflow: hidden;
         }
+        /* F-081: the app handles pinch and two-finger pan itself (marker editor,
+           rating view, camera). Without this the browser claims the gesture to
+           zoom or scroll the page. */
+        canvas {
+            touch-action: none;
+        }
     </style>
+    <script>
+        // F-081: Ctrl + wheel is how a trackpad pinch reaches a page. The marker
+        // editor zooms its photo with it, so the browser must not also zoom the
+        // page. Only on the canvas and only with Ctrl held: plain scrolling and
+        // the keyboard zoom shortcuts are left alone.
+        document.addEventListener('wheel', function (event) {
+            if (event.ctrlKey && event.target instanceof HTMLCanvasElement) {
+                event.preventDefault();
+            }
+        }, { passive: false });
+    </script>
     <script type="application/javascript" src="composeApp.js"></script>
 </head>
 <body></body>
