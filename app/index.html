@@ -3,6 +3,15 @@
 <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <!-- Privacy guard: the app talks to no server except its own. MediaPipe 1.x
+         ships a statistics logger that posts usage metrics to
+         odml.pa.googleapis.com every minute; connect-src 'self' makes the browser
+         refuse that (and any other) request, which keeps the "runs entirely on
+         your device" promise true. The build fails without this line
+         (verifyNoProCodeInWebBundle). Only connect-src is restricted on purpose:
+         the other directives stay open so the Wasm app and the camera keep
+         working. -->
+    <meta http-equiv="Content-Security-Policy" content="connect-src 'self' blob: data:"/>
     <title>SimPosture</title>
     <link rel="icon" type="image/png" sizes="32x32" href="favicon-32.png"/>
     <link rel="icon" type="image/png" sizes="16x16" href="favicon-16.png"/>
@@ -22,6 +31,14 @@
         canvas {
             touch-action: none;
         }
+        /* Compose Multiplatform 1.9+ mounts the app in a shadow root on <body>, and
+           a page stylesheet does not reach into it, so the rule above no longer
+           matches the canvas. touch-action is the intersection over the ancestors
+           of the touched element, and <body> is one of them across the shadow
+           boundary. The canvas fills the page, so the effect is the same. */
+        body {
+            touch-action: none;
+        }
     </style>
     <script>
         // F-081: Ctrl + wheel is how a trackpad pinch reaches a page. The marker
@@ -29,7 +46,10 @@
         // page. Only on the canvas and only with Ctrl held: plain scrolling and
         // the keyboard zoom shortcuts are left alone.
         document.addEventListener('wheel', function (event) {
-            if (event.ctrlKey && event.target instanceof HTMLCanvasElement) {
+            // Inside the shadow root the event is retargeted to <body> by the time
+            // it reaches the document, so the real target is the first entry of the
+            // composed path.
+            if (event.ctrlKey && event.composedPath()[0] instanceof HTMLCanvasElement) {
                 event.preventDefault();
             }
         }, { passive: false });
